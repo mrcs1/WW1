@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RTÉ World War 1</title>
+	
+	<!-- inc. webfonts -->
+	<link href="http://cloud.webtype.com/css/48b028fd-01ec-42e9-bda9-06f9d834e125.css" rel="stylesheet" type="text/css" />
+
+	<!-- inc Foundation -->
+	<link rel="stylesheet" href="css/foundation.css" />
+
+	<!-- inc. WW1 styles -->
+	<link rel="stylesheet" rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+	<header>
+ 	<!--esi <esi:include src='http://www.rte.ie/bosco/snippets/header.html' /> -->
+	</header>
+
+	<!-- Banner fits to window height and width via calc() -->
+	<div class="banner container">
+		<div class="logo large-12 columns">
+			<img src="img/ww1_logo.png" />
+		</div>
+
+		<div class="next large-12 column">
+			<a href="#" class="down"><img src="img/down_arrow.svg" /></a>
+		</div>
+	</div>
+	
+	<!-- FIRST ROW -->
+	<section class="row white">
+		<div class="large-3 large-offset-1 columns">
+			<h1>Ireland and the Great War</h1>
+			<p>Whether for the "shilling", John Redmond, "little Catholic Belgium" or adventure 140,000 Irish men joined the British army in Ireland. Thousands more Irish men were already serving, or were recruited or conscripted in Britain, Australia, the USA and Canada.</p>
+		</div>
+		
+		<div class="large-8 columns">
+			<div class="large-offset-1">
+			<h2>“PRIMARILY I FELT I WAS FIGHTING FOR IRELAND…”</h2>
+			</div>
+			
+			<!-- NESTED ROW FOR PLAYER -->
+			<div class="row player">
+				<!-- CONTROL -->
+				<div class="arrow-l large-1 column">
+					<a class="arrow-left" href="#"><img src="img/arrow_l.png" /></a>
+				</div>
+
+				<div class="large-9 columns">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/placer_776x436.gif" alt="" class="player">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/placer_776x436_2.gif" alt="" class="player">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="arrow-l large-1 column">
+					<a class="arrow-right" href="#"><img src="img/arrow_r.png" /></a>
+				</div>
+				
+				<div class="pagination"></div>
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+
+	<footer>
+		 <!--esi <esi:include src='http://www.rte.ie/bosco/snippets/footer.html' /> -->
+	</footer>
+
+	<!-- Include Modernizer & JQuery -->
+	<script src="js/vendor/modernizr.js"></script>
+	  <script src="js/vendor/jquery-1.10.1.min.js"></script>
+	  <script src="js/vendor/idangerous.swiper-2.1.min.js"></script>
+	  <script>
+		  var mySwiper = new Swiper('.swiper-container',{
+		    pagination: '.pagination',
+		    loop:true,
+		    grabCursor: true,
+		    paginationClickable: true
+		  })
+		  $('.arrow-left').on('click', function(e){
+		    e.preventDefault()
+		    mySwiper.swipePrev()
+		  })
+		  $('.arrow-right').on('click', function(e){
+		    e.preventDefault()
+		    mySwiper.swipeNext()
+		  })
+  </script>
+
+</body>
+</html>

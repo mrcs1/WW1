@@ -1,0 +1,353 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/**
+ * Just specify font-size, don't override current font.
+ */
+/**
+ * The "normal" weight font, usually weight 400
+ */
+/**
+ * The "headline" weight font
+ */
+/**
+ * The "small caps" weight font
+ */
+/**
+ * Helper function to normalize the line-height. Provides an easy way to
+ * handle 'auto' and unspecified lineheight values.
+ */
+/**
+ * Primary helper to get the font bits output correctly
+ */
+::selection {
+  background: #a37b46;
+  color: white; }
+
+::-moz-selection {
+  background: #a37b46;
+  color: white; }
+
+.grey {
+  color: #a37b46; }
+
+body {
+  background: white;
+  color: #736669;
+  font-family: Courier, Courier, "Courier New", Monaco, monospace;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 19.2px;
+  line-height: 1.2rem;
+  font-weight: normal; }
+
+.banner {
+  background-color: #a37b46;
+  min-height: 100%;
+  background-image: url(../img/banner_sml.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block; }
+
+.logo {
+  text-align: center;
+  overflow: hidden;
+  width: 100vw;
+  margin-top: 15%;
+  position: relative;
+  display: block; }
+  .logo img {
+    width: 60%;
+    max-width: 600px; }
+  @media only screen and (max-width: 400px) {
+    .logo {
+      top: 30%; }
+      .logo img {
+        width: 270px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .logo {
+      top: 10em; }
+      .logo img {
+        width: 60%; } }
+
+.intro {
+  margin-top: 60px;
+  color: white;
+  text-transform: uppercase; }
+
+.next {
+  position: absolute !important;
+  width: 96px;
+  height: 32px;
+  left: calc(50% - 46px);
+  bottom: 48px;
+  z-index: 10; }
+
+.pagination {
+  position: fixed;
+  left: 20px;
+  float: left;
+  z-index: 8880;
+  top: calc(50vh - 10%); }
+  .pagination ul {
+    list-style: none; }
+    .pagination ul li {
+      margin: 0 0 12px 0; }
+  @media only screen and (max-width: 640px) {
+    .pagination {
+      left: 4px;
+      width: 80%; } }
+  @media only screen and (max-width: 400px) {
+    .pagination {
+      display: none; } }
+
+.circle a:link {
+  display: block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #221e1f;
+  opacity: .7;
+  text-align: center;
+  padding-top: 4px;
+  font-weight: bold;
+  font-size: 16px; }
+
+.active {
+  opacity: 1 !important; }
+
+.nav {
+  color: white; }
+
+a {
+  color: #0c71b8;
+  text-decoration: underline; }
+
+h1 {
+  font-family: "Bureau Grot Comp", Courier, "Courier New", Monaco, monospace;
+  font-size: 80px;
+  font-size: 5rem;
+  line-height: 80px;
+  line-height: 5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 .5em 0; }
+  @media only screen and (max-width: 640px) {
+    h1 {
+      font-family: "Bureau Grot Comp", Courier, "Courier New", Monaco, monospace;
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 48px !important;
+      line-height: 48px !important/16pxrem;
+      font-weight: normal; } }
+
+h2, h4 {
+  font-family: "Bureau Grot Comp", Courier, "Courier New", Monaco, monospace;
+  font-size: 80px;
+  font-size: 5rem;
+  line-height: 80px;
+  line-height: 5rem;
+  font-weight: normal;
+  color: #a37b46;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+  h2::before, h4::before {
+    content: "\201C";
+    position: relative;
+    left: -0.3 0.5%;
+    margin-left: -3.5%; }
+  h2::after, h4::after {
+    content: "\201D"; }
+  @media only screen and (max-width: 1024px) {
+    h2, h4 {
+      font-family: "Bureau Grot Comp", Courier, "Courier New", Monaco, monospace;
+      font-size: 52px;
+      font-size: 3.25rem;
+      line-height: 52px;
+      line-height: 3.25rem;
+      font-weight: normal; } }
+  @media only screen and (max-width: 400px) {
+    h2, h4 {
+      font-family: "Bureau Grot Comp", Courier, "Courier New", Monaco, monospace;
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 32px;
+      line-height: 2rem;
+      font-weight: normal; } }
+
+h3 {
+  font-family: "Bureau Grot Wide Light", Courier, "Courier New", Monaco, monospace;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 21.6px;
+  line-height: 1.35rem;
+  font-weight: normal;
+  font-weight: normal;
+  color: white;
+  margin: 0 0 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  @media only screen and (max-width: 400px) {
+    h3 {
+      font-family: "Bureau Grot Wide Light", Courier, "Courier New", Monaco, monospace;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 16.8px;
+      line-height: 1.05rem;
+      font-weight: normal; } }
+
+h4 {
+  font-family: "Bureau Grot Comp", Courier, "Courier New", Monaco, monospace;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 32px;
+  line-height: 2rem;
+  font-weight: normal;
+  color: #221e1f; }
+  h4::before {
+    content: "\201C";
+    position: relative;
+    left: -.5%;
+    margin-left: -2.5%; }
+  h4::after {
+    content: "\201D"; }
+
+h5 {
+  font-family: Courier, Courier, "Courier New", Monaco, monospace;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 21px;
+  line-height: 1.3125rem;
+  font-weight: normal;
+  font-weight: normal; }
+  @media only screen and (max-width: 1024px) {
+    h5 {
+      font-family: Courier, Courier, "Courier New", Monaco, monospace;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 20px;
+      line-height: 1.25rem;
+      font-weight: normal; } }
+
+h6 {
+  font-family: "Bureau Grot Wide Light", Courier, "Courier New", Monaco, monospace;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-weight: normal;
+  color: #a59a9d;
+  margin: 0 0 2em 0;
+  padding-top: 1em;
+  text-align: left;
+  letter-spacing: 2px;
+  border-top: 1px solid #221e1f; }
+
+p {
+  font-family: Courier, Courier, "Courier New", Monaco, monospace;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-weight: normal; }
+  @media only screen and (max-width: 1024px) {
+    p {
+      font-family: Courier, Courier, "Courier New", Monaco, monospace;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 20px;
+      line-height: 1.25rem;
+      font-weight: normal; } }
+
+small {
+  font-family: "Bureau Grot Wide Light", Courier, "Courier New", Monaco, monospace;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 16px;
+  line-height: 1rem;
+  font-weight: normal;
+  font-weight: normal;
+  text-align: center !important;
+  text-transform: uppercase;
+  color: #a59a9d; }
+
+.white, .red, .blue, .green, .gold, .black {
+  padding: 0 0 40px 0; }
+
+.white {
+  background: white;
+  color: #221e1f; }
+
+.blue {
+  background: #0c71b8;
+  color: #221e1f; }
+  .blue h2, .blue h3, .blue h4 {
+    color: white; }
+  .blue .more {
+    border-top: 0.15rem dotted white; }
+
+.spacer {
+  height: 50px; }
+
+a.down {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* For IE8 and earlier */
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  a.down:hover {
+    color: white;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */ }
+
+.caption {
+  margin: 0;
+  padding-bottom: 2rem; }
+  .caption p {
+    font-size: 12px;
+    padding-left: 34px; }
+  .caption .listen {
+    background: url("../img/icon_listen.svg") left top no-repeat;
+    background-size: 37px 37px;
+    position: relative;
+    left: -6px;
+    top: 24px;
+    padding-left: 46px; }
+  .caption .watch {
+    background: url("../img/icon_watch.svg") left top no-repeat;
+    background-size: 37px 37px;
+    position: relative;
+    left: -6px;
+    top: 24px;
+    padding-left: 46px; }
+
+.more {
+  padding-top: 36px;
+  padding-bottom: 24px;
+  margin-top: 12px !important;
+  border-top: 0.15rem dotted #a59a9d; }
+
+.rte-footer {
+  text-transform: none;
+  padding-left: 16px; }
+  .rte-footer h2:before {
+    content: none;
+    margin-left: 0; }
+  .rte-footer h2:after {
+    content: none; }
+
+.rte-header nav, .rte-footer .footer-sections, .rte-footer .footer-additional .additional-section {
+  max-width: 61.875rem; }

@@ -1,0 +1,373 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+// IMPORTS
+@import "type";
+
+// Transitions
+@mixin transition($property...) {
+		-webkit-transition:$property .3s ease-in-out;
+		-moz-transition: $property .3s ease-in-out;
+		-o-transition: $property .3s ease-in-out;
+		transition: $property .3s ease-in-out;
+}
+
+// BREAKS
+$small: 400px;
+$medium: 640px;
+$large: 1024px;
+
+// COLOUR
+$gold: rgba(163,123,70,1);
+$blk: rgba(34,30,31,1);
+$white: rgba(255,255,255,1);
+$blue: rgba(12,113,184,1);
+$red: rgba(235,27,35,1);
+$green: rgba(105,161,59,1);
+::selection {background:$gold;color: $white;}
+::-moz-selection {background:$gold;color: $white;}
+.grey {
+    color: $gold;
+}
+
+body {
+	background: $white;
+	color: lighten($blk,30%);
+	@include font-reg(16px);
+}
+
+.banner {
+	background-color: $gold;
+	min-height: 100%;
+	background-image: url(../img/banner_sml.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.logo {
+	text-align: center;
+	overflow: hidden;
+	width: 100vw;
+	margin-top: 15%;
+	position: relative;
+	display: block;
+
+	img {
+		width: 60%;
+		max-width: 600px;
+	}
+
+	@media only screen and (max-width: $small) {
+		top:30%;
+		
+		img {
+			width: 270px;
+	}
+	}
+
+	@media only screen 
+		and (min-device-width : 768px) 
+		and (max-device-width : 1024px) {
+		top: 10em;
+
+		img {
+			width: 60%;
+		}
+	}
+}
+
+.intro {
+	margin-top: 60px;
+	color: $white;
+	text-transform: uppercase;
+
+}
+
+.next {
+	position: absolute !important;
+	width: 96px;
+	height: 32px;
+	left: calc(50% - 46px);
+	bottom: 48px;
+	z-index: 10;
+}
+
+.pagination {
+	position: fixed;
+	left: 20px;
+	float: left;
+	z-index: 8880;
+	top: calc(50vh - 10%);
+
+		ul {
+			list-style: none;
+
+			li {
+				margin: 0 0 12px 0;
+			}
+		}
+
+	@media only screen and (max-width: $medium) {
+		left: 4px;
+		width: 80%;
+	}
+
+	@media only screen and (max-width: $small) {
+	display: none;
+	}
+}
+
+.circle a:link {
+	display: block;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background: $blk;
+	opacity: .7;
+	text-align: center;
+	padding-top: 4px;
+	font: {
+		weight: bold;
+		size: 16px;
+	}
+
+}
+
+
+.active {
+	opacity: 1 !important;
+}
+
+.nav {
+	color: $white;
+}
+
+a {
+	color: $blue;
+	text-decoration: underline;
+}
+
+
+// TYPE
+h1 {
+	@include headline(80px,80px);
+	text-transform: uppercase;
+	margin: 0 0 .5em 0;
+
+	@media only screen and (max-width: $medium) {
+		@include headline(48px,48px !important);
+	}
+
+}
+
+h2,h4 {
+	@include headline(80px,80px);
+	color: $gold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	
+		&::before {
+		 content: "\201C";
+		 position: relative;
+		 left:-.3.5%;
+		 margin-left: -3.5%;
+  
+		}
+
+		&::after{
+  			content: "\201D";
+		}
+
+	@media only screen and (max-width: $large) {
+		@include headline(52px,52px);
+	}
+
+	@media only screen and (max-width: $small) {
+		@include headline(32px,32px);
+	}
+
+}
+
+h3 {
+	@include smallcaps(18px);
+	font-weight: normal;
+	color: lighten( $white, 10% );
+	margin: 0 0 2em 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+		@media only screen and (max-width: $small) {
+			@include smallcaps(14px);
+		}
+
+}
+
+h4 {
+	@include headline(32px,32px);
+	color: $blk;
+			&::before {
+		 content: "\201C";
+		 position: relative;
+		 left:-.5%;
+		 margin-left: -2.5%;
+  
+		}
+
+		&::after{
+  			content: "\201D";
+		}
+}
+
+h5 {
+	@include font-reg(21px,21px);
+		font-weight: normal;
+
+		@media only screen and (max-width: $large) {
+			@include font-reg(14px,20px);
+	}
+
+}
+
+h6 {
+	@include smallcaps(16px,24px);
+	font-weight: normal;
+	color: lighten( $blk, 50% );
+	margin: 0 0 2em 0;
+	padding-top: 1em;
+	text-align: left;
+	letter-spacing: 2px;
+	border-top: 1px solid $blk;
+
+}
+
+
+
+p {
+	@include font-reg(16px,24px);
+	font-weight: normal;
+
+		@media only screen and (max-width: $large) {
+		@include font-reg(14px,20px);
+	}
+
+}
+
+small {
+	@include smallcaps(12px,16px);
+	font-weight: normal;
+	text-align: center !important;
+	text-transform: uppercase;
+	color: lighten( $blk, 50%);
+}
+
+
+
+
+// SECTIONS
+.white, .red, .blue, .green, .gold, .black {
+	padding: 0 0 40px 0;
+}
+
+.white {
+	background: $white;
+	color: $blk;
+}
+
+.blue {
+	background: $blue;
+	color: $blk;
+
+	h2,h3,h4 {
+		color: $white;
+	}
+
+	.more {
+		border-top: .15rem dotted lighten($white,10%);
+
+	}
+}
+
+.spacer {
+	height:50px;
+}
+
+a.down {
+	color: white;
+	text-decoration: none;
+	opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    @include transition;
+
+	&:hover {
+		color: white;
+		opacity: 1;
+    	filter: alpha(opacity=100); /* For IE8 and earlier */
+	}
+
+}
+
+.caption {
+	margin: 0;
+	padding-bottom: 2rem;
+
+	p {
+		font-size: 12px;
+		padding-left: 34px;
+
+	}
+
+	.listen {
+		background: url("../img/icon_listen.svg") left top no-repeat;
+		background-size: 37px 37px;
+		position: relative;
+		left: -6px;
+		top: 24px;
+		padding-left: 46px;
+		}
+
+	.watch {
+		background: url("../img/icon_watch.svg") left top no-repeat;
+		background-size: 37px 37px;
+		position: relative;
+		left: -6px;
+		top: 24px;
+		padding-left: 46px;
+		}
+}
+
+.more {
+	padding-top: 36px;
+	padding-bottom: 24px;
+	margin-top: 12px !important;
+	border-top: .15rem dotted lighten($blk,50%);
+}
+
+// BOSCO OVERRIDES
+.rte-footer {
+	text-transform: none;
+	padding-left: 16px;
+	h2 {
+		&:before {
+			content: none;
+
+			margin-left: 0;
+		}
+
+		&:after {
+			content: none;
+		}
+	}
+}
+
+.rte-header nav, .rte-footer .footer-sections, .rte-footer .footer-additional .additional-section {
+max-width: 61.875rem;
+}

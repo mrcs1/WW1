@@ -19,35 +19,308 @@
 
 	<!-- Include Modernizer & JQuery -->
 	<script type="text/javascript" src="js/vendor/modernizr.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/vendor/scroll.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="js/vendor/scrolld.js"></script>
 
 </head>
 <body>
 	<header>
  	<esi:include src='http://www.rte.ie/bosco/snippets/header.html' />
+ 	<nav class="ww1">
+ 		<ul>
+ 			<li><a href=""></a></li>
+ 			<li><a href=""></a></li>
+ 			<li><a href=""></a></li>
+ 			<li><a href=""></a></li>
+ 			<li><a href=""></a></li>
+ 			<li><a href=""></a></li>
+ 		</ul>
+ 	</nav>
 	</header>
 
 	<!-- Banner fits to window height and width via calc() -->
 	<div class="banner container">
 		<div class="logo large-12 columns">
 			<img data-original="img/ww1_logo.png" class="lazy" alt="WWI 100 Years">
-		<div class="medium-6 large-4 small-centered columns lazy intro">			
-			<h3>On the 100th anniversary of the start of World War 1 RTÉ looks at the Great War from Ireland’s perspective.</h3>
+			<div class="medium-6 large-4 small-centered columns lazy intro">			
+				<h3 class="text_white">On the 100th anniversary of the start of World War 1 RTÉ looks at the Great War from Ireland’s perspective.</h3>
+			</div>
 		</div>
-	</div>
+
 		<div class="next twelve column">
-			<a href="#one" class="down scroll"><img src="img/down_arrow.svg" alt="Read More"></a>
+			<a href="#one" class="down one easeInOutQuart easeOutBounceMobile" id="oneBtn"><img src="img/down_arrow.svg" alt="Read More"></a>
 		</div>
 	</div>
+	
+	<!-- FIRST ROW -->
+	<section class="container white">
+		<div class="row" id="one">
+				<div class="medium-10 medium-offset-1 large-10 columns title">
+					<h1>1: Ireland and the Great War</h1>
+				</div>
+
+				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
+					<p>Whether for the "shilling", John Redmond, "little Catholic Belgium" or adventure 140,000 Irish men joined the British army in Ireland. Thousands more Irish men were already serving, or were recruited or conscripted in Britain, Australia, the USA and Canada.</p>
+				</div>
+
+				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
+					<h2>PRIMARILY I FELT I WAS FIGHTING FOR IRELAND...</h2>
+					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="caption">
+							<p class="watch"><b>Watch:</b> Emmet Dalton of the <a href="http://www.royaldublinfusiliers.com/">Royal Dublin Fusiliers</a> outlines his reasons for joining up and describes the initial reaction of his father to seeing his son in a British Army uniform.</p>
+						</div>
+				</div>
+		</div>
+			
+		<!-- MORE ROW CONTENT -->
+		<div class ="row">
+			<div class="medium-10 small-centered columns more end">
+				<h3>Learn more ▽</h3>
+			</div>
+			<div class="medium-5 columns medium-offset-1">
+				<h4>My father was a soldier, I was born in the British army. I was born in the 3rd Royal Dublin Fusiliers.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="watch"><b>Watch:</b> A veteran of the Royal Dublin Fusiliers give his reasons for enlisting in the Great War.</p>
+					</div>
+			</div>
+
+			<div class="medium-5 medium-offset-0 columns end">
+				<h4>Why did I join? Well I’ll tell you. I had nothing here. There was nothing in it no work or no money or nothing.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Listen:</b> Denis Kelly, a veteran of the Irish Guards, explains how he ended up joining the army in 1914 when he was living in England. </p>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECOND ROW -->
+	<section class="container gold">
+		<div class="row" id="two">
+				<div class="medium-10 medium-offset-1 large-10 columns title">
+					<h1 class="text_white">2: Seeing action on the field</h1>
+				</div>
+
+				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
+					<p>Half the Irish recruits joined within the first six months of the declaration of war. Many worried that it would be all over before they could get to the front. They need not have concerned themselves.</p>
+					<p>Boredom, hunger, cold, disease, martinets and rear echelon desk jockeys, punctuated with occasional bouts of sheer terror and undignified death are some the memories recalled here by veterans.</p>
+				</div>
+
+				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
+					<h2>WE WENT INTO ACTION A THOUSAND FIGHTING MEN AND WE LOST SEVEN HUNDRED.</h2>
+					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="caption">
+							<p class="listen"><b>Listen:</b> Jimmy O'Brien of the Royal Dublin Fusiliers recalls seeing tanks for the first time in 1916 at Beaumont Hamel and how seven hundred men were lost in the battle.</p>
+						</div>
+				</div>
+		</div>
+			
+		<!-- MORE ROW CONTENT -->
+		<div class ="row">
+			<div class="medium-10 small-centered columns more end">
+				<h3>Learn more ▽</h3>
+			</div>
+			<div class="medium-5 columns medium-offset-1">
+				<h4>The noise of the planes, the noise of the exploding shells and we had this terrific rumble of exploding mines.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Listen:</b> A WW1 veteran describes going over the top at the Battle of Messines Ridge, 7 June 1917, just after the British Army had detonated 19 massive mines. In the confusion he came across some terrified German troops.</p>
+					</div>
+			</div>
+
+			<div class="medium-5 medium-offset-0 columns end">
+				<h4>Got up to this horse … he had a lot of blood on his neck and down his shoulder and who evidently had been riding him had died.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Listen:</b> Irish troops fighting at Mons in August 1914 soon found themselves making a desperate retreat. Cavalry trooper <a href="http://1914-1918.invisionzone.com/forums/index.php?showtopic=151834" target="_blank">E.H. de Stacpoole</a> describes losing his own horse and finding a replacement.</p>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- THIRD ROW -->
+	<section class="container blue">
+		<div class="row" id="three">
+				<div class="medium-10 medium-offset-1 large-10 columns title">
+					<h1 class="text_white">3: Life in the trenches</h1>
+				</div>
+
+				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
+					<p>The conditions soldiers endured in the trenches were truly awful. Rats, lice, duckboards, incoming shells, raids, snipers, the fear of entombment, the smell of death from no mans land and the occasional seven day furlough.</p>
+				</div>
+
+				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
+					<h2>I twice woke up under water.</h2>
+					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="caption">
+							<p class="watch"><b>Watch:</b> Colonel E.H. de Stacpoole of the <a href="http://en.wikipedia.org/wiki/Prince_of_Wales's_Leinster_Regiment#World_War_I" target="_blank">The Leinster Regiment</a> talks about how hard it was to keep the water out of the trenches in Flanders, which were prone to flooding.</p>
+						</div>
+				</div>
+		</div>
+			
+		<!-- MORE ROW CONTENT -->
+		<div class ="row">
+			<div class="medium-10 small-centered columns more end">
+				<h3>Learn more ▽</h3>
+			</div>
+			<div class="medium-5 columns medium-offset-1">
+				<h4>And then a shell would blow the trench and fill the trench with clay and smother half of them that was in it.</h4>
+				<img src="img/placer_776x436.gif" alt="http://www.rte.ie/archives/exhibitions/1011-ireland-and-the-great-war/1014-trench-life/316249-roscommon-world-war-1-veteran/?page=1" class="player">
+					<div class="caption">
+						<p class="listen"><b>Watch:</b> Denis Kelly, who served in the Irish Guard, describes the conditions endured by troops at the front in return for seven shillings a week.</p>
+					</div>
+			</div>
+
+			<div class="medium-5 medium-offset-0 columns end">
+				<h4>The lice eating the flesh off the live ones and rats gorging themselves on the bodies of the dead...</h4>
+				<img src="img/placer_776x436.gif" alt="http://www.rte.ie/archives/exhibitions/1011-ireland-and-the-great-war/1014-trench-life/315259-jack-campbell-life-in-the-trench/?page=1" class="player">
+					<div class="caption">
+						<p class="listen"><b>Watch:</b> Jack Campbell of The Black Watch talks about life in the trenches, the fear of going over the top, going hungry and the danger of rats.</p>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOURTH ROW -->
+	<section class="container red">
+		<div class="row" id="four">
+				<div class="medium-10 medium-offset-1 large-10 columns title">
+					<h1 class="text_white">4: Facing the casualties of war</h1>
+				</div>
+
+				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
+					<p>Numbers too vast to imagine. Wounds too ghastly to contemplate. Death as close as the next cigarette. Images too seared on the brain to erase. In their own words veterans recall the horrors they witnessed.</p>
+					<p>The total number of military and civilian casualties in World War I was over 37 million. There were over 16 million deaths and 20 million wounded ranking it among the deadliest conflicts in human history.</p>
+				</div>
+
+				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
+					<h2>I got ripped up… Blown out sky high.</h2>
+					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="caption">
+							<p class="listen"><b>Listen:</b> A veteran of the Royal Dublin Fusiliers tells how he was injured in a shell explosion at Oppy Wood which killed his three companions. </p>
+						</div>
+				</div>
+		</div>
+			
+		<!-- MORE ROW CONTENT -->
+		<div class ="row">
+			<div class="medium-10 small-centered columns more end">
+				<h3>Learn more ▽</h3>
+			</div>
+			<div class="medium-5 columns medium-offset-1">
+				<h4>Some with their arms blown off, sometimes legs blown off with tremendous wounds…</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Watch:</b> Dr Charles Dickson returns to the site of the Battle of the Somme and recalls the horrors he witnessed fifty years earlier.</p>
+					</div>
+			</div>
+
+			<div class="medium-5 medium-offset-0 columns end">
+				<h4>I would never like to see it again anyway tell you the truth.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Listen:</b> Jack King, a veteran of the Royal Irish Regiment, describes horrific scenes of dead soldiers being buried on battlefields only for the corpses to be blown up again later.</p>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FIFTH ROW -->
+	<section class="container green">
+		<div class="row" id="five">
+				<div class="medium-10 medium-offset-1 large-10 columns title">
+					<h1 class="text_white">5: News of the Easter Rising</h1>
+				</div>
+
+				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
+					<p>When word of a rebellion in Dublin spread amongst the Irish fighting abroad the reactions were varied. Some railed against “this stab in the back”. Some tried to desert and get back to Dublin to join in. Most shrugged their shoulders and got on with it.</p>
+				</div>
+
+				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
+					<h2>We felt we had been stabbed in the back.</h2>
+					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="caption">
+							<p class="watch"><b>Watch:</b> Veterans of the First World War discuss how they felt when they heard that there had been an armed rising in Ireland in 1916. </p>
+						</div>
+				</div>
+		</div>
+			
+		<!-- MORE ROW CONTENT -->
+		<div class ="row">
+			<div class="medium-10 small-centered columns more end">
+				<h3>Learn more ▽</h3>
+			</div>
+			<div class="medium-5 columns medium-offset-1">
+				<h4>We were at war in defence of this country and what we believed in.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Watch:</b> On hearing of the outbreak of a rebellion in Dublin in 1916 Emmet Dalton says that he and his fellow soldiers, "Were surprised, annoyed and we thought that it was madness."</p>
+					</div>
+			</div>
+
+			<div class="medium-5 medium-offset-0 columns end">
+				<h4>Whatever might happen in Ireland after we had gone, well we could do nothing about that.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Listen:</b> A veteran of the Irish Guards recalls hearing about the rebellion in Ireland while stationed in Essex.</p>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SIXTH ROW -->
+	<section class="container black">
+		<div class="row" id="six">
+				<div class="medium-10 medium-offset-1 large-10 columns title">
+					<h1 class="text_white">6: Living with the aftermath of war</h1>
+				</div>
+
+				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
+					<p>Relief and elation followed by battle fatigue, alienation, occasional victimisation and silence. Memory became the province of Ulster. In the face of such enormous loss and horror, claims of victory or defeat seem irrelevant, almost sacrilegious. When the fighting finally drew to a close many combatants were too tired to feel much to cheer about.</p>
+
+					<p>In the Republic of Ireland public recognition for those who fought in the First World War would be slow to come.</p>
+				</div>
+
+				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
+					<h2>War is war… You kill or be killed.</h2>
+					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="caption">
+							<p class="watch"><b>Watch:</b> Veterans of the First World War discuss how they felt when they heard that there had been an armed rising in Ireland in 1916. </p>
+						</div>
+				</div>
+		</div>
+			
+		<!-- MORE ROW CONTENT -->
+		<div class ="row">
+			<div class="medium-10 small-centered columns more end">
+				<h3>Learn more ▽</h3>
+			</div>
+			<div class="medium-5 columns medium-offset-1">
+				<h4>We were at war in defence of this country and what we believed in.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Watch:</b> On hearing of the outbreak of a rebellion in Dublin in 1916 Emmet Dalton says that he and his fellow soldiers, "Were surprised, annoyed and we thought that it was madness.".</p>
+					</div>
+			</div>
+
+			<div class="medium-5 medium-offset-0 columns end">
+				<h4>Whatever might happen in Ireland after we had gone, well we could do nothing about that.</h4>
+				<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="caption">
+						<p class="listen"><b>Listen:</b> Jack King, a veteran of the Royal Irish Regiment, describes horrific scenes of dead soldiers being buried on battlefields only for the corpses to be blown up again later.</p>
+					</div>
+			</div>
+		</div>
+	</section>
+
 	
 	<!-- LAST ROW -->
 	<section class="container white">
 	
-	<!-- TRINTIY ROAD SHOW -->
-	<div class="row" id="one">
+	<div class="row">
 		<div class="large-12 spacer">&nbsp;</div>
-				<div class="medium-10 medium-offset-1 large-10 columns"><h1>WW1 Road Show<br>Trinity College Dublin<br>July 12 2014</h1></div>
+				<div class="medium-10 medium-offset-1 large-10 columns"><h1 class=headliner>WW1 Road Show<br>Trinity College Dublin<br>July 12 2014</h1></div>
 
 		<div class="medium-5 medium-offset-1 large-5 columns">
 			<p>The WW1 Road Show at Trinity College Dublin is part of a major retrospective to mark the centenary of World War 1. This day-long programme of free events includes pop up talks, WW1 cooking demonstrations, music, theatre, lectures and family activities.</p>
@@ -84,6 +357,11 @@
     			effectspeed: 'slow' 
 			});
     </script>
+	
+	<!-- Include Scroll -->
+    <script type="text/javascript">
+	$("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();})
+	</script>
 
     <!-- Include Google Tracker -->
     <script>

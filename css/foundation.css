@@ -270,8 +270,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
     float: left; }
 
   .small-1 {

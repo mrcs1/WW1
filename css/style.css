@@ -279,6 +279,16 @@ small {
   text-transform: uppercase;
   color: #a59a9d; }
 
+caption {
+  font-family: Courier, Courier, "Courier New", Monaco, monospace;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #c8e6fb; }
+
 .white, .red, .blue, .green, .gold, .black {
   padding: 0 0 40px 0; }
 
@@ -312,6 +322,9 @@ a.down {
     opacity: 1;
     filter: alpha(opacity=100);
     /* For IE8 and earlier */ }
+
+.captioned {
+  margin-bottom: 12px; }
 
 .caption {
   margin: 0;

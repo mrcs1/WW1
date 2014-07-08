@@ -26,16 +26,20 @@
 <body>
 	<header>
  	<esi:include src='http://www.rte.ie/bosco/snippets/header.html' />
- 	<nav class="ww1">
- 		<ul>
- 			<li><a href=""></a></li>
- 			<li><a href=""></a></li>
- 			<li><a href=""></a></li>
- 			<li><a href=""></a></li>
- 			<li><a href=""></a></li>
- 			<li><a href=""></a></li>
- 		</ul>
- 	</nav>
+
+		<nav class="ww1 small-12 columns" id="nav_fixed">
+		<div class="table">
+			<ul>
+				<li><a href="#one" id="oneBtn">1: Ireland and the Great War</a></li>
+				<li><a href="#two" id="twoBtn">2: Action on the field</a></li>
+				<li><a href="#three" id="threeBtn">3: In the trenches</a></li>
+				<li><a href="#four" id="fourBtn">4: Casualties of war</a></li>
+				<li><a href="#five" id="fiveBtn">5: The Easter Rising</a></li>
+				<li><a href="#six" id="sixBtn">6: The aftermath of war</a></li>
+				<li><a href="#six" id="lastBtn">WW1 100 Years Roadshow </a></li>
+			</ul>
+			</div>
+		</nav>
 	</header>
 
 	<!-- Banner fits to window height and width via calc() -->
@@ -48,7 +52,7 @@
 		</div>
 
 		<div class="next twelve column">
-			<a href="#one" class="down one easeInOutQuart easeOutBounceMobile" id="oneBtn"><img src="img/down_arrow.svg" alt="Read More"></a>
+			<a href="#one" class="down one easeInOutQuart easeInOutQuartMobile" id="oneBtn"><img src="img/down_arrow.svg" alt="Read More"></a>
 		</div>
 	</div>
 	
@@ -316,9 +320,9 @@
 
 	
 	<!-- LAST ROW -->
-	<section class="container white">
+	<section class="container white no-bg">
 	
-	<div class="row">
+	<div class="row" id="last">
 		<div class="large-12 spacer">&nbsp;</div>
 				<div class="medium-10 medium-offset-1 large-10 columns"><h1 class=headliner>WW1 Road Show<br>Trinity College Dublin<br>July 12 2014</h1></div>
 

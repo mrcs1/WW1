@@ -1,7 +1,7 @@
 // See skeleton file for copyright info
 
-@import "dependencies"; // don't remove me
-@import "functions";	// your custom functions
+// @import "dependencies"; // don't remove me
+// @import "functions";	// your custom functions
 
 // ---------- ADD CUSTOM MIXINS BELOW HERE
 // @mixin myMixin() { }
@@ -21,4 +21,12 @@
 // mobileGrid ( [ number $width: 960px, [ number $colCount: 16 ]  ] )
 @mixin mobileGrid($width: $baseWidth, $colCount: $baseColCount) {
 	@include _mobileGrid($width, $colCount);
+}
+
+// Transitions
+@mixin transition($property...) {
+		-webkit-transition:$property .3s ease-in-out;
+		-moz-transition: $property .3s ease-in-out;
+		-o-transition: $property .3s ease-in-out;
+		transition: $property .3s ease-in-out;
 }

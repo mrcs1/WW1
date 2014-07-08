@@ -25,25 +25,30 @@
 </head>
 <body>
 	<header>
- 	<esi:include src='http://www.rte.ie/bosco/snippets/header.html' />
+ 	<!--esi:include src='http://www.rte.ie/bosco/snippets/header.html' /-->
 
 		<nav class="ww1 small-12 columns" id="nav_fixed">
+			<div class="logo_fixed"><a href="index.html" id="topBtn"><img src="img/wwi100years.png" alt="WWI 100 Years"></img></a>
+			</div>
+			<div class="schedule_fixed"><a href="#"><img src="img/icon_schedule.svg" alt="Schedule"></img></a>
+			</div>
 		<div class="table">
 			<ul>
-				<li><a href="#one" id="oneBtn">1: Ireland and the Great War</a></li>
-				<li><a href="#two" id="twoBtn">2: Action on the field</a></li>
+				<li><a href="#one" id="oneBtn">1: The Great War</a></li>
+				<li><a href="#two" id="twoBtn">2: Seeing action</a></li>
 				<li><a href="#three" id="threeBtn">3: In the trenches</a></li>
 				<li><a href="#four" id="fourBtn">4: Casualties of war</a></li>
-				<li><a href="#five" id="fiveBtn">5: The Easter Rising</a></li>
-				<li><a href="#six" id="sixBtn">6: The aftermath of war</a></li>
-				<li><a href="#six" id="lastBtn">WW1 100 Years Roadshow </a></li>
+				<li><a href="#five" id="fiveBtn">5: The 1916 Rising</a></li>
+				<li><a href="#six" id="sixBtn">6: The aftermath</a></li>
+				<li><a href="roadshow.html" class="external">WW1 Roadshow</a></li>
+				<li><a href="#eight" class="external">TV & Radio schedule</a></li>
 			</ul>
 			</div>
 		</nav>
 	</header>
 
 	<!-- Banner fits to window height and width via calc() -->
-	<div class="banner container">
+	<div class="banner container" id="top">
 		<div class="logo large-12 columns">
 			<img data-original="img/ww1_logo.png" class="lazy" alt="WWI 100 Years">
 			<div class="medium-6 large-4 small-centered columns lazy intro">			
@@ -60,7 +65,8 @@
 	<section class="container white">
 		<div class="row" id="one">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
-					<h1>1: Ireland and the Great War</h1>
+					<h1>1: Ireland and <br>the Great War<br>
+						↓</h1>
 				</div>
 
 				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
@@ -77,10 +83,11 @@
 		</div>
 			
 		<!-- MORE ROW CONTENT -->
-		<div class ="row">
 			<div class="medium-10 small-centered columns more end">
 				<h3>Learn more ▽</h3>
 			</div>
+
+			<div class ="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
 				<h4>My father was a soldier, I was born in the British army. I was born in the 3rd Royal Dublin Fusiliers.</h4>
 				<img src="img/placer_776x436.gif" alt="" class="player">
@@ -103,7 +110,10 @@
 	<section class="container gold">
 		<div class="row" id="two">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
-					<h1 class="text_white">2: Seeing action on the field</h1>
+					<h1 class="text_white">
+						2: Seeing action <br>
+						on the field<br>
+						↓</h1>
 				</div>
 
 				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
@@ -121,10 +131,10 @@
 		</div>
 			
 		<!-- MORE ROW CONTENT -->
-		<div class ="row">
-			<div class="medium-10 small-centered columns more end">
-				<h3>Learn more ▽</h3>
-			</div>
+		<div class="medium-10 small-centered columns more end">
+			<h3>Learn more ▽</h3>
+		</div>
+		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
 				<h4>The noise of the planes, the noise of the exploding shells and we had this terrific rumble of exploding mines.</h4>
 				<img src="img/placer_776x436.gif" alt="" class="player">
@@ -147,7 +157,9 @@
 	<section class="container blue">
 		<div class="row" id="three">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
-					<h1 class="text_white">3: Life in the trenches</h1>
+					<h1 class="text_white">3: Life in the<br>
+						trenches<br>
+						↓</h1>
 				</div>
 
 				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
@@ -164,10 +176,10 @@
 		</div>
 			
 		<!-- MORE ROW CONTENT -->
-		<div class ="row">
-			<div class="medium-10 small-centered columns more end">
-				<h3>Learn more ▽</h3>
-			</div>
+		<div class="medium-10 small-centered columns more end">
+			<h3>Learn more ▽</h3>
+		</div>
+		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
 				<h4>And then a shell would blow the trench and fill the trench with clay and smother half of them that was in it.</h4>
 				<img src="img/placer_776x436.gif" alt="http://www.rte.ie/archives/exhibitions/1011-ireland-and-the-great-war/1014-trench-life/316249-roscommon-world-war-1-veteran/?page=1" class="player">
@@ -190,7 +202,9 @@
 	<section class="container red">
 		<div class="row" id="four">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
-					<h1 class="text_white">4: Facing the casualties of war</h1>
+					<h1 class="text_white">4: Facing the casualties <br>
+						of war<br>
+						↓</h1>
 				</div>
 
 				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
@@ -208,10 +222,10 @@
 		</div>
 			
 		<!-- MORE ROW CONTENT -->
-		<div class ="row">
-			<div class="medium-10 small-centered columns more end">
-				<h3>Learn more ▽</h3>
-			</div>
+		<div class="medium-10 small-centered columns more end">
+			<h3>Learn more ▽</h3>
+		</div>
+		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
 				<h4>Some with their arms blown off, sometimes legs blown off with tremendous wounds…</h4>
 				<img src="img/placer_776x436.gif" alt="" class="player">
@@ -234,7 +248,9 @@
 	<section class="container green">
 		<div class="row" id="five">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
-					<h1 class="text_white">5: News of the Easter Rising</h1>
+					<h1 class="text_white">5: News of the <br>
+						Easter Rising<br>
+						↓</h1>
 				</div>
 
 				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
@@ -251,10 +267,10 @@
 		</div>
 			
 		<!-- MORE ROW CONTENT -->
-		<div class ="row">
-			<div class="medium-10 small-centered columns more end">
-				<h3>Learn more ▽</h3>
-			</div>
+		<div class="medium-10 small-centered columns more end">
+			<h3>Learn more ▽</h3>
+		</div>
+		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
 				<h4>We were at war in defence of this country and what we believed in.</h4>
 				<img src="img/placer_776x436.gif" alt="" class="player">
@@ -277,7 +293,7 @@
 	<section class="container black">
 		<div class="row" id="six">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
-					<h1 class="text_white">6: Living with the aftermath of war</h1>
+					<h1 class="text_white">6: Living with the <br>aftermath of war<br>↓</h1>
 				</div>
 
 				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
@@ -290,21 +306,21 @@
 					<h2>War is war… You kill or be killed.</h2>
 					<img src="img/placer_776x436.gif" alt="" class="player">
 						<div class="caption">
-							<p class="watch"><b>Watch:</b> Veterans of the First World War discuss how they felt when they heard that there had been an armed rising in Ireland in 1916. </p>
+							<p class="watch_white"><b>Watch:</b> Veterans of the First World War discuss how they felt when they heard that there had been an armed rising in Ireland in 1916. </p>
 						</div>
 				</div>
 		</div>
 			
 		<!-- MORE ROW CONTENT -->
-		<div class ="row">
-			<div class="medium-10 small-centered columns more end">
-				<h3>Learn more ▽</h3>
-			</div>
+		<div class="medium-10 small-centered columns more end">
+			<h3>Learn more ▽</h3>
+		</div>
+		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
 				<h4>We were at war in defence of this country and what we believed in.</h4>
 				<img src="img/placer_776x436.gif" alt="" class="player">
 					<div class="caption">
-						<p class="listen"><b>Watch:</b> On hearing of the outbreak of a rebellion in Dublin in 1916 Emmet Dalton says that he and his fellow soldiers, "Were surprised, annoyed and we thought that it was madness.".</p>
+						<p class="watch_white"><b>Watch:</b> On hearing of the outbreak of a rebellion in Dublin in 1916 Emmet Dalton says that he and his fellow soldiers, "Were surprised, annoyed and we thought that it was madness.".</p>
 					</div>
 			</div>
 
@@ -312,44 +328,13 @@
 				<h4>Whatever might happen in Ireland after we had gone, well we could do nothing about that.</h4>
 				<img src="img/placer_776x436.gif" alt="" class="player">
 					<div class="caption">
-						<p class="listen"><b>Listen:</b> Jack King, a veteran of the Royal Irish Regiment, describes horrific scenes of dead soldiers being buried on battlefields only for the corpses to be blown up again later.</p>
+						<p class="listen_white"><b>Listen:</b> Jack King, a veteran of the Royal Irish Regiment, describes horrific scenes of dead soldiers being buried on battlefields only for the corpses to be blown up again later.</p>
 					</div>
 			</div>
 		</div>
 	</section>
 
 	
-	<!-- LAST ROW -->
-	<section class="container white no-bg">
-	
-	<div class="row" id="last">
-		<div class="large-12 spacer">&nbsp;</div>
-				<div class="medium-10 medium-offset-1 large-10 columns"><h1 class=headliner>WW1 Road Show<br>Trinity College Dublin<br>July 12 2014</h1></div>
-
-		<div class="medium-5 medium-offset-1 large-5 columns">
-			<p>The WW1 Road Show at Trinity College Dublin is part of a major retrospective to mark the centenary of World War 1. This day-long programme of free events includes pop up talks, WW1 cooking demonstrations, music, theatre, lectures and family activities.</p>
-			<p>Members of the public are also invited to bring along items relating to World War 1 to be catalogued for an online European archive at the Family Memorabilia event. Experts from the National Library of Ireland will be on hand to review and record your family memorabilia.</p>
-			<p><em>Please note: registration for the Family Memorabilia event is now closed. We look forward to seeing you on the day.</em></p>
-			<h6>You can download a PDF guide for the WW1 Road Show, with a full list of programmes, times and locations – <a href="docs/ww1_roadshow_guide_web.pdf" target="_blank">Download guide</a></h6>
-		</div>
-		
-		<div class="medium-3 large-3 medium-offset-1 columns end">
-			<img src="img/papyruscase55_099_lo_edit.jpg" alt="WW1 recruitment poster" class="captioned">
-			<small>WW1 recruitment poster, courtesy <a href="http://digitalcollections.tcd.ie/home/index.php?DRIS_ID=PapyrusCase55_001">Trinity College Library Dublin.</a></small>
-		</div>
-		
-	</div>
-
-		<div class="row">
-			<div class="large-10 large-centered small-10 small-offset-1 columns more">
-				<div class="small-9 large-centered">
-					<small>The WW1 Road Show is a partnership between the National Library of Ireland, RTÉ Radio 1 and Trinity College, Dublin.</small><br>
-					<img src="img/partners.png" width="320" alt="RTÉ, Trinity College Dublin, National Library of Ireland"/>
-				</div>
-			</div>
-		</div>
-
-	</section>
 
 	<esi:include src='http://www.rte.ie/bosco/snippets/footer_wc.html' />
 	
@@ -366,6 +351,16 @@
     <script type="text/javascript">
 	$("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();})
 	</script>
+
+	<!-- Include expander -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+	$('.more').click(function(){
+    $(this).next('.learnmore').slideToggle("slow");
+  });
+});
+	</script>
+	
 
     <!-- Include Google Tracker -->
     <script>

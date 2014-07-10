@@ -26,9 +26,15 @@ body {
 	@include font-reg(16px);
 }
 
+body.blk {
+	background: $blk;
+	@include font-reg(16px);
+	color: $white;
+}
+
 .banner {
 	background-color: $gold;
-	min-height: 100%;
+	min-height: 95%;
 	background-image: url(../img/banner_gold.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -37,14 +43,13 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	display: block;
-	top: 48px;
 	padding: 0 0 40px 0;
 	border: 1rem solid;
 }
 
 .logo {
 	text-align: center;
-	overflow: hidden;
+	overflow: visible;
 	// width: 100vw;
 	margin-top: 15%;
 	position: relative;
@@ -59,14 +64,15 @@ body {
 		top:30%;
 		
 		img {
-			width: 270px;
+			width: 244px;
+			margin-top: 24px;
 	}
 	}
 
 	@media only screen 
 		and (min-device-width : 768px) 
 		and (max-device-width : 1024px) {
-		top: 10em;
+		// top: 10em;
 
 		img {
 			width: 60%;
@@ -77,30 +83,29 @@ body {
 
 .logo_fixed {
 	float: left;
-	margin: 30px 0 0 12px;
+	margin: 30px 0 0 0;
 	position: relative;
-	left: 16px;
+	left: 14px;
 
 		@media only screen and (max-width: 980px) {
 		display:block;
 		margin: 15px 0 0 0px;
-		left: 0px;
+		
 	}
 }
 
 .schedule_fixed {
 	float: right;
-	margin: 16px 0 0 12px;
+	margin: 16px 1em 0 12px;
 	position: relative;
 	width: 48px;
-	right: 16px;
+	right: 14px;
 	display:none;
 
 	@media only screen and (max-width: 980px) {
 		display:block;
 		width: 32px;
 		margin: 8px 0 0 12px;
-		right: 0px;
 	}
 }
 
@@ -108,16 +113,24 @@ body {
 	display: inline;   /* Allow the centering to work */
 	margin: 0 auto;
 	float: right;
+
+	@media only screen and (max-width: 980px) {
+			display:none;
+			background-color: $gold;
+			width: 100%;
+		}
 }
+
 
 
 
 nav.ww1 {
 	height: 80px;
-	background-color: rgba($blk,.98);
+	background-color: $gold;
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
+	padding: 0;
 
 	@media only screen and (max-width: 980px) {
 		height: 48px;
@@ -128,11 +141,12 @@ nav.ww1 {
 		margin: 14px auto 0 auto;
 		height: 60px;
 		list-style: none;
-
-		@media only screen and (max-width: 980px) {
-			display:none;
-			height: 40px;
+	
+	@media only screen and (max-width: 980px) {
+		display: table;
+		margin-left: 6px;
 		}
+
 	}
 
 	ul li {
@@ -152,12 +166,12 @@ nav.ww1 {
 		@include transition;
 
 		&:hover {
-			color: $gold;
+			color: $blk;
 			text-decoration: none !important;
 		}
 
 		&:active {
-			color: $gold;
+			color: $blk;
 			text-decoration: none !important;
 		}
 	}
@@ -182,12 +196,11 @@ nav.ww1 {
 }
 
 .next {
-	position: absolute !important;
 	width: 96px;
 	height: 32px;
 	left: calc(50% - 46px);
 	bottom: 48px;
-	z-index: 10;
+	margin: 0 auto;
 }
 
 .pagination {
@@ -319,7 +332,6 @@ h3 {
 	color: $gold;
 	margin: 0 0 2em 0;
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: 2px;
 
 		@media only screen and (max-width: $small) {
@@ -327,6 +339,23 @@ h3 {
 		}
 
 }
+
+
+h3.para1, h3.prog_title {
+	@include smallcaps(18px,24px);
+	text-transform: normal;
+	color: $blk;
+	text-align: left;
+
+	@media only screen and (max-width: $small) {
+		@include smallcaps(14px,21px);
+	}
+}
+
+h3.prog_title {
+	margin: 0 0 0 0;
+}
+
 
 h4 {
 	@include headline(32px,32px);
@@ -357,7 +386,7 @@ h5 {
 h6 {
 	@include smallcaps(16px,24px);
 	font-weight: normal;
-	color: lighten( $blk, 50% );
+	color: rgba($blk,.5 );
 	margin: 0 0 2em 0;
 	padding-top: 1em;
 	text-align: left;
@@ -372,10 +401,35 @@ p {
 	@include font-reg(16px,24px);
 	font-weight: normal;
 
-		@media only screen and (max-width: $large) {
+		@media only screen and (max-width: $medium) {
 		@include font-reg(14px,20px);
+		letter-spacing: 1px;
+
 	}
 
+}
+
+p.prog_name {
+	color: $gold !important;
+	margin-bottom: 0;
+
+}
+
+.prog_time {
+	height: 150%;
+	line-height: 1.8em;
+	margin-bottom: 0;
+}
+
+.prog_list {
+	border-bottom: 1px solid rgba($white,.2);
+	margin-bottom: 1.2em !important;
+
+}
+
+.row .row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 small {
@@ -383,11 +437,9 @@ small {
 	font-weight: normal;
 	text-align: center !important;
 	text-transform: uppercase;
-	color: lighten( $blk, 50%);
+	color: rgba($blk,.5 );
+	padding-top: 1em;
 }
-
-
-
 
 // SECTIONS
 .title {
@@ -450,7 +502,7 @@ small {
 
 .black {
 	background: $blk;
-	border-color: $gold;
+	border-color: $gold !important;
 	background-image: url(../img/bg_black_06.jpg);
 	background-position: 10% 6%;
 	background-repeat: no-repeat;
@@ -466,6 +518,15 @@ small {
 
 	.more {
 		border-color: $white;
+	}
+
+	.scheduleMore {
+		border-color: none;
+		text-transform: uppercase;
+
+		h3 {
+			@include smallcaps (27px);
+		}
 	}
 
 }
@@ -532,7 +593,40 @@ small {
 
 }
 
-.white, .gold, .black, .red, .blue, .green, {
+.first_container {
+	top:80px;
+	position: relative;
+
+	@media only screen and (max-width: $large + 1 ) {
+		top: 48px;
+	}
+}
+
+.roadshow {
+	background: $white;
+	color: rgba($gold,.8);
+	border-color:rgba($gold,.5);
+	// background-image: url(../img/bg_horse.jpg);
+	background-position: 90% 6%;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	
+	
+	p {
+	color: rgba($blk,.8);
+	}
+
+	h2,h3,h4 {
+			color: rgba($blk,.6);
+	}
+
+	a {
+		color: $blk;
+	}
+
+}
+
+.white, .gold, .black, .red, .blue, .green, .roadshow {
 	padding: 0 0 40px 0;
 	border: 1rem solid;
 
@@ -591,6 +685,21 @@ a.down {
     	filter: alpha(opacity=100); /* For IE8 and earlier */
 	}
 
+	img {
+		width: auto;
+
+	@media only screen and (max-width: $medium) {
+		width: 60%;
+	}
+	}
+
+}
+
+.link_centre {
+	@include font-reg(21px);
+	font-weight: bold;
+	text-align: center;
+	margin-top: 6px;
 }
 
 .caption {
@@ -599,45 +708,45 @@ a.down {
 
 	p {
 		@include font-reg(14px,21px);
-		padding-left: 34px;
+		padding-left: 36px;
 
 	}
+}
 
-	.listen {
-		background: url("../img/icon_listen.svg") left top no-repeat;
-		background-size: 37px 37px;
+.listen, .watch, .listen_white, .watch_white {
 		position: relative;
 		left: -6px;
-		top: 24px;
-		padding-left: 46px;
+		padding-left: 36px;
+
+		@media only screen and (max-width: $small) {
+			padding-left: 36px;
+			background-size: 24px;
+		}
 		}
 
-	.watch {
-		background: url("../img/icon_watch.svg") left top no-repeat;
-		background-size: 37px 37px;
-		position: relative;
-		left: -6px;
-		top: 24px;
-		padding-left: 46px;
-		}
+.listen {
+	background: url("../img/icon_listen.svg") left top no-repeat;
+	background-size: 24px;
+}
 
-	.listen_white {
-		background: url("../img/icon_listen_white.svg") left top no-repeat;
-		background-size: 37px 37px;
-		position: relative;
-		left: -6px;
-		top: 24px;
-		padding-left: 46px;
-		}
+.watch {
+	background: url("../img/icon_watch.svg") left top no-repeat;
+	background-size: 24px;
+}
 
-	.watch_white {
-		background: url("../img/icon_watch_white.svg") left top no-repeat;
-		background-size: 37px 37px;
-		position: relative;
-		left: -6px;
-		top: 24px;
-		padding-left: 46px;
-		}
+.listen_white {
+	background: url("../img/icon_listen_white.svg") left top no-repeat;
+	background-size: 24px;
+}
+
+.watch_white {
+	background: url("../img/icon_watch_white.svg") left top no-repeat;
+	background-size: 24px;
+	}
+
+.captioned {
+	clear: both;
+	margin-bottom: 24px;
 }
 
 
@@ -660,4 +769,24 @@ a.down {
 
 .rte-header nav, .rte-footer .footer-sections, .rte-footer .footer-additional .additional-section {
 max-width: 61.875rem;
+}
+
+.playerWrapper {
+	margin-bottom: 1em;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.player {
+		margin-bottom: 1em;
 }

@@ -15,7 +15,7 @@
 	<!-- inc. WW1 styles -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
 
 
 	<!-- Include Modernizer & JQuery -->
@@ -28,44 +28,6 @@
 <body>
 	<header>
  	<esi:include src='http://www.rte.ie/bosco/snippets/header.html' />
- 	<!-- <div class="rte-header">
-    <nav>
-        <a class="rte-menu-logo" href="//www.rte.ie">Home</a><a href="javascript:void(0);" class="menu-trigger">Menu</a>
-        <ul class="nav-level-one">
-            <li><a href="//www.rte.ie/news/">News</a></li>
-            <li><a href="//www.rte.ie/sport/">Sport</a></li>
-            <li><a href="//www.rte.ie/business/">Business</a></li>
-            <li><a href="//www.rte.ie/entertainment/">Entertainment</a></li>
-            <li><a href="//www.rte.ie/player/">RTÉ Player</a></li>
-            <li><a href="//www.rte.ie/tv/">TV</a></li>
-            <li><a href="//www.rte.ie/radio/">Radio</a></li>
-            <li><a href="javascript:void(0);" class="more-menu-trigger">More</a></li>
-        </ul>
-        <ul class="nav-level-two">
-            <li><a href="//www.rte.ie/live/">RTÉ Live</a></li>
-            <li><a href="//www.rte.ie/player/#l=7">RTÉ News Now</a></li>
-            <li><a href="javascript:launchRadioPopup('channel=0');">RTÉ Radio Player</a></li>
-            <li><a href="//www.rte.ie/aertel/">RTÉ Aertel</a></li>
-            <li><a href="//www.rte.ie/extra/apps.html">RTÉ Apps</a></li>
-            <li><a href="//www.rte.ie/weather/">Weather</a></li>
-            <li><a href="//www.rte.ie/lifestyle/fashion/">Fashion</a></li>
-            <li><a href="//www.rte.ie/lifestyle/food/">Food</a></li>
-            <li><a href="//www.rte.ie/lifestyle/travel/">Travel</a></li>
-            <li><a href="//www.rte.ie/lifestyle/motors/">Motors</a></li>
-            <li><a href="//www.rte.ie/lifestyle/homes/">Homes</a></li>
-            <li><a href="//www.rte.ie/blogs/digital/">RTÉ Digital Blog</a></li>
-            <li><a href="//www.rte.ie/lotto/">Lotto</a></li>
-            <li><a href="//www.rte.ie/jobs/">Jobs</a></li>
-            <li><a href="//www.rte.ie/about/">About</a></li>
-            <li><a href="//www.rte.ie/shop/">Shop</a></li>
-            <li><a href="//www.rte.ie/rtejr/">RTÉjr</a></li>
-            <li><a href="//www.rte.ie/trte/">TRTÉ</a></li>
-            <li><a href="//www.rte.ie/archives/">RTÉ Archives</a></li>
-            <li><a href="mailto:feedback@rte.ie">Feedback</a></li>
-        </ul>
-    </nav>
-</div> -->
-
 		<nav class="ww1 small-12 columns" id="nav_fixed">
 			<div class="navWrapper large-12 small-centered">
 			<div class="logo_fixed"><a href="index.html" id="topBtn"><img src="img/wwi100years.png" alt="WWI 100 Years"></img></a>
@@ -79,11 +41,11 @@
 					<li><a href="#one" id="oneBtn">1: The Great War</a></li>
 					<li><a href="#two" id="twoBtn">2: Seeing action</a></li>
 					<li><a href="#three" id="threeBtn">3: In the trenches</a></li>
-					<li><a href="#four" id="fourBtn">4: Casualties of war</a></li>
-					<li><a href="#five" id="fiveBtn">5: The 1916 Rising</a></li>
+					<li><a href="#four" id="fourBtn">4: The casualties of war</a></li>
+					<li><a href="#five" id="fiveBtn">5: The Easter Rising</a></li>
 					<li><a href="#six" id="sixBtn">6: The aftermath</a></li>
-					<li><a href="roadshow.html" class="external">WW1 Roadshow</a></li>
-					<li><a href="schedule.html" class="external">TV & Radio schedule</a></li>
+					<li><a href="roadshow/" class="external">WW1 Roadshow</a></li>
+					<li><a href="schedule/" class="external">TV & Radio schedule</a></li>
 				</ul>
 				</div>
 			</div>
@@ -91,14 +53,14 @@
 	</header>
 
 	<!-- Banner fits to window height and width via calc() -->
-	<div class="banner container" id="top">
+	<div class="banner_home container" id="top">
 		<div class="logo large-12 columns">
 			<img data-original="img/ww1_logo.png" class="lazy" alt="WWI 100 Years">
 			<div class="medium-6 large-4 small-centered columns intro">			
-				<h3 class="text_white">On the 100th anniversary of the start of World War 1 RTÉ looks at the Great War from Ireland’s perspective.</h3>
+				<h3 class="text_white introduction">On the 100th anniversary of the start of World War 1 RTÉ looks at the Great War from Ireland’s perspective.</h3>
 			</div>
 			<div class="next">
-			<a href="#one" class="down one easeInOutQuart easeInOutQuartMobile" id="oneBtn"><img src="img/down_arrow.svg" alt="Read More"></a>
+			<a href="#one" class="down one easeInOutQuart easeInOutQuartMobile" id="oneBtn"><img src="img/down_arrow.svg" alt="Read More" onerror="this.src='img/down_arrow.png'"></a>
 		</div>
 		</div>
 
@@ -119,8 +81,7 @@
 
 				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
 					<h2>PRIMARILY I FELT I WAS FIGHTING FOR IRELAND...</h2>
-						<div class="playerWrapper">
-							<iframe src="http://www.rte.ie/bosco/components/player/iframe.html?clipid=20611899&amp;autostart=false" frameborder="0" width="746" height="419"></iframe>
+						<div class="playerWrapper" data-clipid="10302765">
 						</div>
 						<div class="caption">
 							<p class="watch"><b>Watch:</b> Emmet Dalton of the <a href="http://www.royaldublinfusiliers.com/">Royal Dublin Fusiliers</a> outlines his reasons for joining up and describes the initial reaction of his father to seeing his son in a British Army uniform.</p>
@@ -131,25 +92,23 @@
 		<!-- MORE ROW CONTENT -->
 			<div class="row">
 					<div class="medium-10 small-centered columns moreWrap end">
-						<h3 class="more">Learn more ▽</h3>
+						<h3 class="more">Learn more ▼</h3>
 					</div>
 
 					<div class ="row learnmore">
 					<div class="medium-5 columns medium-offset-1">
-						<h4>My father was a soldier, I was born in the British army. I was born in the 3rd Royal Dublin Fusiliers.</h4>
-							<div class="playerWrapper">
-								<iframe class="embed-player youtube-embed" src="http://www.rte.ie/bosco/components/player/iframe.html?clipid=20612307&amp;thumbnail=http://img.rasset.ie/000935c1-700.jpg" width="617" height="346" frameborder="0"></iframe>
+							<div class="playerWrapper" data-clipid="10302345">
 							</div>
+							<h4>My father was a soldier, I was born in the British army. I was born in the 3rd Royal Dublin Fusiliers.</h4>
 							<div class="caption">
 								<p class="watch"><b>Watch:</b> A veteran of the Royal Dublin Fusiliers give his reasons for enlisting in the Great War.</p>
 							</div>
 					</div>
 
 					<div class="medium-5 medium-offset-0 columns end">
-						<h4>Why did I join? Well I’ll tell you. I had nothing here. There was nothing in it no work or no money or nothing.</h4>
-							<div class="playerWrapper">
-								<iframe class="embed-player youtube-embed" src="http://www.rte.ie/bosco/components/player/iframe.html?clipid=20611011&amp;thumbnail=http://img.rasset.ie/00093479-700.jpg" wwidth="617" height="346" frameborder="0"></iframe>
+							<div class="playerWrapper" data-clipid="10302329">
 							</div>
+							<h4>Why did I join? Well I’ll tell you. I had nothing here. There was nothing in it no work or no money or nothing.</h4>
 							<div class="caption">
 								<p class="listen"><b>Listen:</b> Denis Kelly, a veteran of the Irish Guards, explains how he ended up joining the army in 1914 when he was living in England. </p>
 							</div>
@@ -164,18 +123,18 @@
 				<div class="medium-10 medium-offset-1 large-10 columns title">
 					<h1 class="text_white">
 						2: Seeing action <br>
-						on the field<br>
+						on the battlefield<br>
 						↓</h1>
 				</div>
 
 				<div class="medium-4 medium-offset-1 large-3 large-offset-1 columns end">
 					<p>Half the Irish recruits joined within the first six months of the declaration of war. Many worried that it would be all over before they could get to the front. They need not have concerned themselves.</p>
-					<p>Boredom, hunger, cold, disease, martinets and rear echelon desk jockeys, punctuated with occasional bouts of sheer terror and undignified death are some the memories recalled here by veterans.</p>
+					<p>Boredom, hunger, cold, disease, punctuated with occasional bouts of sheer terror and undignified death are some the memories recalled here by veterans.</p>
 				</div>
 
 				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
 					<h2>WE WENT INTO ACTION A THOUSAND FIGHTING MEN AND WE LOST SEVEN HUNDRED.</h2>
-					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="playerWrapper" data-clipid="10302358"></div>
 						<div class="caption">
 							<p class="listen"><b>Listen:</b> Jimmy O'Brien of the Royal Dublin Fusiliers recalls seeing tanks for the first time in 1916 at Beaumont Hamel and how seven hundred men were lost in the battle.</p>
 						</div>
@@ -185,22 +144,22 @@
 		<!-- MORE ROW CONTENT -->
 		<div class="row">
 					<div class="medium-10 small-centered columns moreWrap end">
-						<h3 class="more">Learn more ▽</h3>
+						<h3 class="more">Learn more ▼</h3>
 					</div>
 		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
+						<div class="playerWrapper" data-clipid="10302351"></div>
 				<h4>The noise of the planes, the noise of the exploding shells and we had this terrific rumble of exploding mines.</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
 					<div class="caption">
 						<p class="listen"><b>Listen:</b> A WW1 veteran describes going over the top at the Battle of Messines Ridge, 7 June 1917, just after the British Army had detonated 19 massive mines. In the confusion he came across some terrified German troops.</p>
 					</div>
 			</div>
 
 			<div class="medium-5 medium-offset-0 columns end">
+						<div class="playerWrapper" data-clipid="10302349"></div>
 				<h4>This horse … he had a lot of blood on his neck and down his shoulder and who evidently had been riding him had died.</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
 					<div class="caption">
-						<p class="listen"><b>Listen:</b> Irish troops fighting at Mons in August 1914 soon found themselves making a desperate retreat. Cavalry trooper <a href="http://1914-1918.invisionzone.com/forums/index.php?showtopic=151834" target="_blank">E.H. de Stacpoole</a> describes losing his own horse and finding a replacement.</p>
+						<p class="listen"><b>Listen:</b> Irish troops fighting at Mons in August 1914 soon found themselves making a desperate retreat. Cavalry trooper E.H. de Stacpoole describes losing his own horse and finding a replacement.</p>
 					</div>
 			</div>
 		</div>
@@ -222,9 +181,9 @@
 
 				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
 					<h2>I twice woke up under water.</h2>
-					<img src="img/placer_776x436.gif" alt="" class="player">
+						<div class="playerWrapper" data-clipid="10302361"></div>
 						<div class="caption">
-							<p class="watch"><b>Watch:</b> Colonel E.H. de Stacpoole of the <a href="http://en.wikipedia.org/wiki/Prince_of_Wales's_Leinster_Regiment#World_War_I" target="_blank">The Leinster Regiment</a> talks about how hard it was to keep the water out of the trenches in Flanders, which were prone to flooding.</p>
+							<p class="listen"><b>Listen:</b> Colonel E.H. de Stacpoole of the The Leinster Regiment talks about how hard it was to keep the water out of the trenches in Flanders, which were prone to flooding.</p>
 						</div>
 				</div>
 		</div>
@@ -232,22 +191,22 @@
 		<!-- MORE ROW CONTENT -->
 		<div class="row">
 					<div class="medium-10 small-centered columns moreWrap end">
-						<h3 class="more">Learn more ▽</h3>
+						<h3 class="more">Learn more ▼</h3>
 					</div>
 		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
-				<h4>And then a shell would blow the trench and fill the trench with clay and smother half of them that was in it.</h4>
-				<img src="img/placer_776x436.gif" alt="http://www.rte.ie/archives/exhibitions/1011-ireland-and-the-great-war/1014-trench-life/316249-roscommon-world-war-1-veteran/?page=1" class="player">
+						<div class="playerWrapper" data-clipid="10302320"></div>
+					<h4>And then a shell would blow the trench and fill the trench with clay and smother half of them that was in it.</h4>
 					<div class="caption">
-						<p class="listen"><b>Watch:</b> Denis Kelly, who served in the Irish Guard, describes the conditions endured by troops at the front in return for seven shillings a week.</p>
+						<p class="listen"><b>Listen:</b> Denis Kelly, who served in the Irish Guard, describes the conditions endured by troops at the front in return for seven shillings a week.</p>
 					</div>
 			</div>
 
 			<div class="medium-5 medium-offset-0 columns end">
-				<h4>The lice eating the flesh off the live ones and rats gorging themselves on the bodies of the dead...</h4>
-				<img src="img/placer_776x436.gif" alt="http://www.rte.ie/archives/exhibitions/1011-ireland-and-the-great-war/1014-trench-life/315259-jack-campbell-life-in-the-trench/?page=1" class="player">
+						<div class="playerWrapper" data-clipid="10302365"></div>
+					<h4>The lice eating the flesh off the live ones and rats gorging themselves on the bodies of the dead...</h4>
 					<div class="caption">
-						<p class="listen"><b>Watch:</b> Jack Campbell of The Black Watch talks about life in the trenches, the fear of going over the top, going hungry and the danger of rats.</p>
+						<p class="watch"><b>Watch:</b> Jack Campbell of The Black Watch talks about life in the trenches, the fear of going over the top, going hungry and the danger of rats.</p>
 					</div>
 			</div>
 		</div>
@@ -258,7 +217,7 @@
 	<section class="container red">
 		<div class="row" id="four">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
-					<h1 class="text_white">4: Facing the casualties <br>
+					<h1 class="text_white">4: The casualties <br>
 						of war<br>
 						↓</h1>
 				</div>
@@ -270,7 +229,7 @@
 
 				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
 					<h2>I got ripped up… Blown out sky high.</h2>
-					<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="playerWrapper" data-clipid="10302373"></div>
 						<div class="caption">
 							<p class="listen"><b>Listen:</b> A veteran of the Royal Dublin Fusiliers tells how he was injured in a shell explosion at Oppy Wood which killed his three companions. </p>
 						</div>
@@ -280,20 +239,20 @@
 		<!-- MORE ROW CONTENT -->
 		<div class="row">
 					<div class="medium-10 small-centered columns moreWrap end">
-						<h3 class="more">Learn more ▽</h3>
+						<h3 class="more">Learn more ▼</h3>
 					</div>
 		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
-				<h4>Some with their arms blown off, sometimes legs blown off with tremendous wounds…</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
+			<div class="playerWrapper" data-clipid="10302385"></div>
+					<h4>Some with their arms blown off, sometimes legs blown off with tremendous wounds…</h4>
 					<div class="caption">
-						<p class="listen"><b>Watch:</b> Dr Charles Dickson returns to the site of the Battle of the Somme and recalls the horrors he witnessed fifty years earlier.</p>
+						<p class="watch"><b>Watch:</b> Dr Charles Dickson returns to the site of the Battle of the Somme and recalls the horrors he witnessed fifty years earlier.</p>
 					</div>
 			</div>
 
 			<div class="medium-5 medium-offset-0 columns end">
-				<h4>I would never like to see it again anyway tell you the truth.</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
+			<div class="playerWrapper" data-clipid="10302387"></div>				
+					<h4>I would never like to see it again anyway tell you the truth.</h4>
 					<div class="caption">
 						<p class="listen"><b>Listen:</b> Jack King, a veteran of the Royal Irish Regiment, describes horrific scenes of dead soldiers being buried on battlefields only for the corpses to be blown up again later.</p>
 					</div>
@@ -317,7 +276,7 @@
 
 				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
 					<h2>We felt we had been stabbed in the back.</h2>
-					<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="playerWrapper" data-clipid="10302389"></div>
 						<div class="caption">
 							<p class="watch"><b>Watch:</b> Veterans of the First World War discuss how they felt when they heard that there had been an armed rising in Ireland in 1916. </p>
 						</div>
@@ -327,21 +286,20 @@
 		<!-- MORE ROW CONTENT -->
 		<div class="row">
 					<div class="medium-10 small-centered columns moreWrap end">
-						<h3 class="more">Learn more ▽</h3>
+						<h3 class="more">Learn more ▼</h3>
 					</div>
 		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
-				<h4>We were at war in defence of this country and what we believed in.</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
+			<div class="playerWrapper" data-clipid="10302318"></div>				
+					<h4>We were at war in defence of this country and what we believed in.</h4>
 					<div class="caption">
 						<p class="listen"><b>Watch:</b> On hearing of the outbreak of a rebellion in Dublin in 1916 Emmet Dalton says that he and his fellow soldiers, "Were surprised, annoyed and we thought that it was madness."</p>
 					</div>
 			</div>
 
 			<div class="medium-5 medium-offset-0 columns end">
-				<h4>Whatever might happen in Ireland after we had gone, well we could do nothing about that.</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
-					<div class="caption">
+			<div class="playerWrapper" data-clipid="10302391"></div>				
+					<h4>Whatever might happen in Ireland after we had gone, well we could do nothing about that.</h4>		<div class="caption">
 						<p class="listen"><b>Listen:</b> A veteran of the Irish Guards recalls hearing about the rebellion in Ireland while stationed in Essex.</p>
 					</div>
 			</div>
@@ -364,9 +322,9 @@
 
 				<div class="medium-6 large-6 large-offset-1 small-12 columns end">
 					<h2>War is war… You kill or be killed.</h2>
-					<img src="img/placer_776x436.gif" alt="" class="player">
+					<div class="playerWrapper" data-clipid="10302698"></div>
 						<div class="caption">
-							<p class="watch_white"><b>Watch:</b> Veterans of the First World War discuss how they felt when they heard that there had been an armed rising in Ireland in 1916. </p>
+							<p class="watch_white"><b>Watch:</b> Jack Campbell's outstanding memory of the war is the loyalty of his comrades to the cause and the oath. </p>
 						</div>
 				</div>
 		</div>
@@ -374,22 +332,24 @@
 		<!-- MORE ROW CONTENT -->
 		<div class="row">
 					<div class="medium-10 small-centered columns moreWrap end">
-						<h3 class="more">Learn more ▽</h3>
+						<h3 class="more">Learn more ▼</h3>
 					</div>
 		<div class="row learnmore">
 			<div class="medium-5 columns medium-offset-1">
-				<h4>We were at war in defence of this country and what we believed in.</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
+			<div class="playerWrapper" data-clipid="10302397">
+					</div>
+					<h4>I don’t think that today’s generation could survive it.</h4>
 					<div class="caption">
-						<p class="watch_white"><b>Watch:</b> On hearing of the outbreak of a rebellion in Dublin in 1916 Emmet Dalton says that he and his fellow soldiers, "Were surprised, annoyed and we thought that it was madness.".</p>
+						<p class="watch_white"><b>Watch:</b> Emmet Dalton believes it is impossible to know if Ireland paid too high a price for participating in the war.</p>
 					</div>
 			</div>
 
 			<div class="medium-5 medium-offset-0 columns end">
-				<h4>Whatever might happen in Ireland after we had gone we could do nothing about that.</h4>
-				<img src="img/placer_776x436.gif" alt="" class="player">
+			<div class="playerWrapper" data-clipid="10302400">
+					</div>
+					<h4>With a Northern accent, Protestant name and an ex-service man, it was hard to live here.</h4>
 					<div class="caption">
-						<p class="listen_white"><b>Listen:</b> Jack King, a veteran of the Royal Irish Regiment, describes horrific scenes of dead soldiers being buried on battlefields only for the corpses to be blown up again later.</p>
+						<p class="watch_white"><b>Watch:</b> Sam Hutchinson of the Royal Irish Fusiliers talks about life in Dublin after the war, looking for work and the difficulties of being a former British soldier in Ireland.</p>
 					</div>
 			</div>
 		</div>
@@ -399,21 +359,30 @@
 	<!-- LAST ROW -->
 	<section class="container white no-bg">
 		<div class="row" id="six">
-				<div class="medium-10 medium-offset-1 large-10 columns title">
+				<div class="medium-12 large-9 medium-centered columns title">
 					<h1>More from RTÉ<br>↓</h1>
 				</div>
 
-		<div class="columns">
-			<div class="medium-5 columns medium-offset-1">
-				<a href="roadshow.html" class="external"><img data-original="img/papyruscase55_113_lo_edit.jpg" alt="" class="player lazy"></a>
+		<div class="columns large-centered large-9">
+			<div class="medium-4 columns">
+				<a href="roadshow/" class="external"><img data-original="img/papyruscase55_113_lo_edit.jpg" alt="" class="player lazy"></a>
+				<p class="link_centre"><a href="roadshow/" class="external">WW1 Roadshow</a> →</p>
 						<h3>The WWI road show at Trinity College Dublin is part of a major retrospective to mark the centenary of World War 1.</h3>
-						<p class="link_centre"><a href="roadshow.html" class="external">WW1 Roadshow</a> →</p>
+						
 			</div>
 
-			<div class="medium-5 medium-offset-0 columns end">
-				<a href="schedule.html" class="external"><img data-original="img/placer_629x416.gif" alt="" class="player lazy">
+			<div class="medium-4 columns">
+				<a href="schedule/" class="external"><img data-original="img/rteMoreImg.jpg" alt="" class="player lazy"></a>
+				<p class="link_centre"><a href="schedule/" class="external">TV & Radio schedule</a> →</p>
 						<h3>Watch, listen and engage with new programming to commemorate and celebrate the efforts of all those involved in the Great War.</h3>
-						<p class="link_centre"><a href="schedule.html" class="external">TV & Radio schedule</a> →</p>
+						
+			</div>
+
+			<div class="medium-4 columns">
+				<a href="http://www.rte.ie/archives/exhibitions/1011-ireland-and-the-great-war/" class="external"><img data-original="img/archivesMoreImg.jpg" alt="" class="player lazy"></a>
+				<p class="link_centre"><a href="http://www.rte.ie/archives/exhibitions/1011-ireland-and-the-great-war/" class="external">RTÉ Archives</a> →</p>
+						<h3>Visit the RTÉ Archives for even more footage and clips about Ireland’s role in WW1.</h3>
+						
 			</div>
 		</div>
 	</section>
@@ -426,11 +395,44 @@
 	<!-- Include JS Lazyload -->
 	<script src="js/vendor/lazyload.js"></script>
 	<script type="text/javascript">
-			$("img.lazy, li.lazy").lazyload({
+			$("img.lazy,li.lazy,.lazyFrame").lazyload({
     			effect : "fadeIn",
     			effectspeed: 'slow' 
 			});
     </script>
+
+    <!-- Include iframe load -->
+     <script>
+    
+    //dom ready
+    $(document).ready(function(){
+      
+      //on window scroll
+      $(window).scroll(function() {
+          //loop through all players on the page
+          $('.playerWrapper').each(function( index, value ) {
+
+          //check if your div is visible to user
+          if ( $(window).scrollTop() + $(window).height() >= $(this).offset().top ) {
+
+            //check if this has already been loaded           
+            if( typeof $(this).attr('loaded') == typeof undefined ) {
+                  //inject iframe player
+                $(this).html('<iframe src="http://www.rte.ie/bosco/components/player/iframe.html?clipid='+$(this).data('clipid')+'" frameborder="0" width="600" height="337"></iframe>');
+                //set loaded flag so it doesnt reload
+                $(this).attr('loaded', true);
+
+              }//end if loaded
+          }//end if div in view
+            
+            });//end each
+
+        });//end on scroll
+  }); //end doc ready
+
+       
+  
+ </script>
 	
 	<!-- Include Scroll -->
     <script type="text/javascript">
@@ -438,14 +440,13 @@
 	</script>
 
 	<!-- Include expander -->
-		<script type="text/javascript">
+	<script type="text/javascript">
 		$(document).ready(function(){
-	$('.moreWrap,.navWrap').click(function(){
-    $(this).next('.learnmore,.navTable').slideToggle("slow");
-  });
-});
+			$('.moreWrap,.navWrap,.shareBut').click(function(){
+		    $(this).next('.learnmore,.navTable,.shareSocial').slideToggle("slow");
+		  });
+		});
 	</script>
-	
 
     <!-- Include Google Tracker -->
     <script>
@@ -458,6 +459,8 @@
 		  ga('send', 'pageview');
 
 	</script>
+
+
 
 <!-- required pre closing body scripts for bosco -->
 <script src="//rte.ie/bosco/js/bosco.common.js"></script>

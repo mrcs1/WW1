@@ -15,7 +15,7 @@
 	<!-- inc. WW1 styles -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
 
 
 	<!-- Include Modernizer & JQuery -->
@@ -28,44 +28,6 @@
 <body class="blk">
 	<header>
  	<esi:include src='http://www.rte.ie/bosco/snippets/header.html' />
- 	<!-- <div class="rte-header">
-	    <nav>
-	        <a class="rte-menu-logo" href="//www.rte.ie">Home</a><a href="javascript:void(0);" class="menu-trigger">Menu</a>
-	        <ul class="nav-level-one">
-	            <li><a href="//www.rte.ie/news/">News</a></li>
-	            <li><a href="//www.rte.ie/sport/">Sport</a></li>
-	            <li><a href="//www.rte.ie/business/">Business</a></li>
-	            <li><a href="//www.rte.ie/entertainment/">Entertainment</a></li>
-	            <li><a href="//www.rte.ie/player/">RTÉ Player</a></li>
-	            <li><a href="//www.rte.ie/tv/">TV</a></li>
-	            <li><a href="//www.rte.ie/radio/">Radio</a></li>
-	            <li><a href="javascript:void(0);" class="more-menu-trigger">More</a></li>
-	        </ul>
-	        <ul class="nav-level-two">
-	            <li><a href="//www.rte.ie/live/">RTÉ Live</a></li>
-	            <li><a href="//www.rte.ie/player/#l=7">RTÉ News Now</a></li>
-	            <li><a href="javascript:launchRadioPopup('channel=0');">RTÉ Radio Player</a></li>
-	            <li><a href="//www.rte.ie/aertel/">RTÉ Aertel</a></li>
-	            <li><a href="//www.rte.ie/extra/apps.html">RTÉ Apps</a></li>
-	            <li><a href="//www.rte.ie/weather/">Weather</a></li>
-	            <li><a href="//www.rte.ie/lifestyle/fashion/">Fashion</a></li>
-	            <li><a href="//www.rte.ie/lifestyle/food/">Food</a></li>
-	            <li><a href="//www.rte.ie/lifestyle/travel/">Travel</a></li>
-	            <li><a href="//www.rte.ie/lifestyle/motors/">Motors</a></li>
-	            <li><a href="//www.rte.ie/lifestyle/homes/">Homes</a></li>
-	            <li><a href="//www.rte.ie/blogs/digital/">RTÉ Digital Blog</a></li>
-	            <li><a href="//www.rte.ie/lotto/">Lotto</a></li>
-	            <li><a href="//www.rte.ie/jobs/">Jobs</a></li>
-	            <li><a href="//www.rte.ie/about/">About</a></li>
-	            <li><a href="//www.rte.ie/shop/">Shop</a></li>
-	            <li><a href="//www.rte.ie/rtejr/">RTÉjr</a></li>
-	            <li><a href="//www.rte.ie/trte/">TRTÉ</a></li>
-	            <li><a href="//www.rte.ie/archives/">RTÉ Archives</a></li>
-	            <li><a href="mailto:feedback@rte.ie">Feedback</a></li>
-	        </ul>
-	    </nav>
-	</div>
-
 		<nav class="ww1 small-12 columns" id="nav_fixed">
 			<div class="navWrapper large-12 small-centered">
 			<div class="logo_fixed"><a href="index.html" id="topBtn"><img src="img/wwi100years.png" alt="WWI 100 Years"></img></a>
@@ -83,10 +45,10 @@
 				</div>
 			</div>
 		</nav>
-	</header> -->
+	</header>
 	
 	<!-- FIRST ROW -->
-	<section class="container black first_container no-bg">
+	<section class="container black no-bg" id="top">
 		<div class="row">
 				<div class="medium-10 medium-offset-1 large-10 columns title">
 					<h1 class="text_white">TV & Radio<br>programming<br>
@@ -509,7 +471,7 @@
 	<!-- Include expander -->
 		<script type="text/javascript">
 		$(document).ready(function(){
-	$('.moreWrap,.navWrap').click(function(){
+	$('.moreWrap,.navWrap,.scheduleMore').click(function(){
     $(this).next('.learnmore,.navTable').slideToggle("slow");
   });
 });

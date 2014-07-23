@@ -1,0 +1,41 @@
+<!-- START gallery Styling -->
+<link rel="stylesheet" type="text/css" href="http://static.rasset.ie/bosco/components/gallery/css/gallery.css">
+<!-- END gallery Styling -->
+
+<!-- START gallery JavaScript Libraries -->
+<script type="text/javascript">var queryString = "?" + '<!--#echo var="QUERY_STRING" -->'.replace("&amp;", "&");</script>
+<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>');</script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-route.min.js"></script>
+<script>
+    if (!window.angular) {
+        document.write('<script src="http://static.rasset.ie/bosco/components/tracker/js/vendor/angular-1.2.12.min.js"><\/script>');
+        document.write('<script src="http://static.rasset.ie/bosco/components/gallery/js/vendor/angular-route.js"><\/script>');
+    }
+</script>
+<script src="http://static.rasset.ie/bosco/components/gallery/js/gallery.js"></script>
+<script src="http://static.rasset.ie/bosco/js/bosco.common.js" charset="utf-8"></script>
+
+<!-- END gallery JavaScript Libraries -->
+
+<section id="gallery" data-ng-app="gallery">
+
+	<script type="text/ng-template" id="image.html">
+	  	<div class="pager">
+			<a ng-if="prev >= 0" href="#/{{ prev }}" class="pager-prev">&#10094; Previous</a>
+			<span class="page">{{ next }} of {{ limit }}</span>
+			<a ng-if="next <= limit - 1" href="#/{{ next }}" class="pager-next">Next &#10095;</a>
+		</div>
+		
+		<div class="images">
+			<img ng-src="{{ imageUrl }}" alt="{{ caption }}" />
+			<div class="caption">{{ caption }}</div>
+		</div>
+	</script>
+
+	<ng-view autoscroll="false"></ng-view>
+   
+</section>
+
+
+

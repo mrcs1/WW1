@@ -629,6 +629,9 @@ a {
 .no-bg {
   background-image: none; }
 
+.no-border {
+  border: none; }
+
 a.down {
   color: white;
   text-decoration: none;
@@ -664,30 +667,40 @@ a.down {
   text-align: center;
   margin-top: 6px; }
 
-.caption {
-  margin: 0;
-  padding-bottom: 2rem; }
-  .caption p {
+.gallery {
+  margin: 0; }
+  .gallery p {
     font-family: Courier, Courier, "Courier New", Monaco, monospace;
     font-size: 14px;
     font-size: 0.875rem;
-    line-height: 21px;
-    line-height: 1.3125rem;
+    line-height: 24px;
+    line-height: 1.5rem;
     font-weight: normal;
     padding-left: 36px; }
 
-.listen, .watch, .listen_white, .watch_white {
+.listen, .watch, .gallery, .listen_white, .watch_white, .close_white {
   position: relative;
   left: -6px;
   padding-left: 36px; }
   @media only screen and (max-width: 440px) {
-    .listen, .watch, .listen_white, .watch_white {
+    .listen, .watch, .gallery, .listen_white, .watch_white, .close_white {
       padding-left: 36px;
-      background-size: 24px; } }
+      background-size: 23px; } }
+
+.gallery_white {
+  position: relative;
+  left: -6px;
+  padding-left: 36px;
+  color: white !important;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 440px) {
+    .gallery_white {
+      padding-left: 36px;
+      background-size: 23px; } }
 
 .listen {
   background: url("../img/icon_listen.svg") left top no-repeat;
-  background-size: 24px; }
+  background-size: 23px; }
 
 .no-svg .listen {
   background-image: url(../img/icon_listen.png) left top no-repeat;
@@ -695,7 +708,15 @@ a.down {
 
 .watch {
   background: url("../img/icon_watch.svg") left top no-repeat;
-  background-size: 24px; }
+  background-size: 23px; }
+
+.gallery {
+  background: url("../img/icon_gallery.svg") left top no-repeat;
+  background-size: 23px; }
+
+.close {
+  background: url("../img/icon_close.svg") left top no-repeat;
+  background-size: 36px; }
 
 .no-svg .watch {
   background-image: url(../img/icon_watch.png) left top no-repeat;
@@ -703,7 +724,7 @@ a.down {
 
 .listen_white {
   background: url("../img/icon_listen_white.svg") left top no-repeat;
-  background-size: 24px; }
+  background-size: 23px; }
 
 .no-svg .listen_white {
   background-image: url(../img/icon_listen_white.png) left top no-repeat;
@@ -711,10 +732,22 @@ a.down {
 
 .watch_white {
   background: url("../img/icon_watch_white.svg") left top no-repeat;
-  background-size: 24px; }
+  background-size: 23px; }
 
 .watch_white {
   background: url("../img/icon_watch_white.png") left top no-repeat;
+  background-size: 23px; }
+
+.gallery_white {
+  background: url("../img/icon_gallery_white.svg") left top no-repeat;
+  background-size: 23px; }
+
+.close_white {
+  background: url("../img/icon_close_white.svg") left top no-repeat;
+  background-size: 36px; }
+
+.no-svg .close_white {
+  background-image: url(../img/icon_close_white.png) left top no-repeat;
   background-size: 24px; }
 
 .captioned {
@@ -752,10 +785,45 @@ a.down {
   height: 100%;
   background: rgba(42, 39, 40, 0.9); }
 
-.player {
-  margin-bottom: 1em; }
-
 .social-share {
   float: right;
   position: fixed;
   bottom: 10px; }
+
+.galleryButton {
+  position: absolute;
+  background: rgba(12, 113, 184, 0.9);
+  padding: 12px 12px 12px 18px; }
+
+#gallery {
+  min-height: 100% !important; }
+
+.pager {
+  margin-bottom: 16px; }
+  .pager .page {
+    color: white !important; }
+
+.caption {
+  margin-top: 16px;
+  font-family: "Bureau Grot Wide Light", Courier, "Courier New", Monaco, monospace;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 19.2px;
+  line-height: 1.2rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.9); }
+
+.images img {
+  max-height: 75%; }
+  @media only screen and (max-width: 440px) {
+    .images img {
+      max-height: 45%; } }
+
+.galleryClose {
+  position: relative;
+  float: right;
+  top: 24px;
+  right: 1%; }
+  .galleryClose p {
+    line-height: 36px;
+    padding-left: 48px; }

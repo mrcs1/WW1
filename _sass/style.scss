@@ -695,6 +695,10 @@ small {
 	background-image: none;
 }
 
+.no-border {
+	border: none;
+}
+
 
 
 a.down {
@@ -732,31 +736,44 @@ a.down {
 	margin-top: 6px;
 }
 
-.caption {
+.gallery{
 	margin: 0;
-	padding-bottom: 2rem;
+	// padding-bottom: 2rem;
 
 	p {
-		@include font-reg(14px,21px);
+		@include font-reg(14px,24px);
 		padding-left: 36px;
 
 	}
 }
 
-.listen, .watch, .listen_white, .watch_white {
+.listen, .watch, .gallery, .listen_white, .watch_white, .close_white {
 		position: relative;
 		left: -6px;
 		padding-left: 36px;
 
 		@media only screen and (max-width: $small) {
 			padding-left: 36px;
-			background-size: 24px;
+			background-size: 23px;
+		}
+		}
+
+.gallery_white {
+		position: relative;
+		left: -6px;
+		padding-left: 36px;
+		color: $white !important;
+		margin-bottom: 0;
+
+		@media only screen and (max-width: $small) {
+			padding-left: 36px;
+			background-size: 23px;
 		}
 		}
 
 .listen {
 	background: url("../img/icon_listen.svg") left top no-repeat;
-	background-size: 24px;
+	background-size: 23px;
 }
 
 .no-svg .listen {
@@ -766,8 +783,19 @@ a.down {
 
 .watch {
 	background: url("../img/icon_watch.svg") left top no-repeat;
-	background-size: 24px;
+	background-size: 23px;
 }
+
+.gallery {
+	background: url("../img/icon_gallery.svg") left top no-repeat;
+	background-size: 23px;
+}
+
+.close {
+	background: url("../img/icon_close.svg") left top no-repeat;
+	background-size: 36px;
+}
+
 
 .no-svg .watch {
   background-image: url(../img/icon_watch.png) left top no-repeat;
@@ -776,7 +804,7 @@ a.down {
 
 .listen_white {
 	background: url("../img/icon_listen_white.svg") left top no-repeat;
-	background-size: 24px;
+	background-size: 23px;
 }
 
 .no-svg .listen_white {
@@ -786,13 +814,28 @@ a.down {
 
 .watch_white {
 	background: url("../img/icon_watch_white.svg") left top no-repeat;
-	background-size: 24px;
+	background-size: 23px;
 	}
 
 .watch_white {
 	background: url("../img/icon_watch_white.png") left top no-repeat;
-	background-size: 24px;
+	background-size: 23px;
 	}
+
+.gallery_white {
+	background: url("../img/icon_gallery_white.svg") left top no-repeat;
+	background-size: 23px;
+}
+
+.close_white {
+	background: url("../img/icon_close_white.svg") left top no-repeat;
+	background-size: 36px;
+}
+
+.no-svg .close_white {
+  background-image: url(../img/icon_close_white.png) left top no-repeat;
+  background-size: 24px;
+}
 
 .captioned {
 	clear: both;
@@ -843,12 +886,56 @@ max-width: 61.875rem;
       background: rgba($blk,.9);
     }
 
-.player {
-		margin-bottom: 1em;
-}
+// .player {
+// 		margin-bottom: 1em;
+// }
 
 .social-share {
 	float: right;
 	position: fixed;
 	bottom: 10px;
+}
+
+.galleryButton {
+	position: absolute;
+	background: rgba($blue,.9);
+	padding: 12px 12px 12px 18px;
+}
+
+#gallery {min-height: 100% !important;}
+
+
+.pager {
+	margin-bottom: 16px;
+
+	.page {
+		color: $white !important;
+	}
+}
+
+.caption {
+	margin-top: 16px;
+	@include smallcaps(16px);
+	color: rgba($white,.9);
+}
+
+.images {
+	img {
+		max-height: 75%;
+
+	@media only screen and (max-width: $small) {
+		max-height: 45%;
+	}	}
+}
+
+.galleryClose {
+	position: relative;
+	float: right;
+	top: 24px;
+	right: 1%;
+
+	p {
+		line-height: 36px;
+		padding-left: 48px;
+	}
 }

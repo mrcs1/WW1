@@ -5,6 +5,7 @@ $default-lineheight: -1;
 $base-font-size: 16px;
 $base-font: Courier, "Courier New", Monaco, monospace;
 $headline-font: "Bureau Grot Comp", Impact, helvetica, sans-serif;
+$script: "Kristi", cursive;
  
 /**
  * Just specify font-size, don't override current font.
@@ -41,6 +42,14 @@ $headline-font: "Bureau Grot Comp", Impact, helvetica, sans-serif;
  */
 @mixin smallcaps($fontsize, $lineheight: $default-lineheight) {
   @include _font_setup("Bureau Grot Wide Light", $fontsize, $lineheight);
+  font-weight: normal;
+}
+
+/**
+ * The "script" weight font
+ */
+@mixin script($fontsize, $lineheight: $default-lineheight) {
+  @include _font_setup("Kristi", $fontsize, $lineheight);
   font-weight: normal;
 }
  

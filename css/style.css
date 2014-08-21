@@ -11,6 +11,9 @@
  * The "small caps" weight font
  */
 /**
+ * The "script" weight font
+ */
+/**
  * Helper function to normalize the line-height. Provides an easy way to
  * handle 'auto' and unspecified lineheight values.
  */
@@ -46,6 +49,8 @@ body.blk {
   line-height: 1.2rem;
   font-weight: normal;
   color: white; }
+  body.blk a:hover {
+    color: rgba(255, 255, 255, 0.8); }
 
 .banner {
   background-color: #b08f6e;
@@ -74,31 +79,66 @@ body.blk {
   display: block;
   padding: 0 0 40px 0; }
 
-.logo {
+.banner_letters {
+  background-color: #2a2728;
+  min-height: 99%;
+  background-image: url(../img/banner_letters.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0 0 40px 0;
+  border: 1rem solid; }
+
+.logo, .livestream {
   text-align: center;
   overflow: visible;
   margin-top: 15%;
   position: relative;
   display: block; }
-  .logo img {
+  .logo img, .livestream img {
     width: 60%;
     max-width: 600px; }
   @media only screen and (max-width: 440px) {
-    .logo {
+    .logo, .livestream {
       top: 30%; }
-      .logo img {
+      .logo img, .livestream img {
         width: 244px;
         margin-top: 24px; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .logo img {
+    .logo img, .livestream img {
       width: 60%; } }
+
+.livestream {
+  margin-top: 5%; }
+
+.logo_letters {
+  text-align: center;
+  overflow: visible;
+  margin-top: 15%;
+  position: relative;
+  display: block; }
+  .logo_letters img {
+    width: 95%; }
+  @media only screen and (max-width: 440px) {
+    .logo_letters {
+      top: 30%; }
+      .logo_letters img {
+        width: 120%;
+        margin-top: 24px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .logo_letters img {
+      width: 90%; } }
 
 .logo_fixed {
   float: left;
   margin: 30px 0 0 0;
   position: relative;
   left: 14px; }
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 1012px) {
     .logo_fixed {
       display: block;
       margin: 15px 0 0 0px; } }
@@ -110,7 +150,7 @@ body.blk {
   width: 48px;
   right: 14px;
   display: none; }
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 1012px) {
     .schedule_fixed {
       display: block;
       width: 32px;
@@ -122,7 +162,7 @@ body.blk {
   float: right;
   position: relative;
   padding-right: 10px; }
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 1012px) {
     .table {
       display: none;
       background-color: #b08f6e;
@@ -134,7 +174,7 @@ nav.ww1 {
   z-index: 9999;
   width: 100%;
   padding: 0; }
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 1012px) {
     nav.ww1 {
       height: 48px; } }
   nav.ww1 ul {
@@ -142,23 +182,23 @@ nav.ww1 {
     margin: 14px auto 0 auto;
     height: 60px;
     list-style: none; }
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1012px) {
       nav.ww1 ul {
         display: table;
         margin-left: 6px; } }
   nav.ww1 ul li {
     display: inline;
     font-family: "Bureau Grot Wide Light", Courier, "Courier New", Monaco, monospace;
-    font-size: 11px;
-    font-size: 0.6875rem;
-    line-height: 13.2px;
-    line-height: 0.825rem;
+    font-size: 10px;
+    font-size: 0.625rem;
+    line-height: 12px;
+    line-height: 0.75rem;
     font-weight: normal;
     font-weight: 600;
     text-align: left;
     float: left;
-    margin: .6em;
-    width: 76px;
+    margin: .6em .3em;
+    width: 88px;
     height: 59px;
     border-bottom: 5px solid rgba(255, 255, 255, 0.1); }
     nav.ww1 ul li a {
@@ -454,6 +494,35 @@ small {
   color: rgba(42, 39, 40, 0.5);
   padding-top: 1em; }
 
+.script {
+  font-family: "Kristi", Courier, "Courier New", Monaco, monospace;
+  font-size: 80px;
+  font-size: 5rem;
+  line-height: 80px;
+  line-height: 5rem;
+  font-weight: normal;
+  color: #56432f;
+  text-transform: none;
+  margin-bottom: .5em; }
+  @media only screen and (max-width: 960px) {
+    .script {
+      font-family: "Kristi", Courier, "Courier New", Monaco, monospace;
+      font-size: 55px;
+      font-size: 3.4375rem;
+      line-height: 55px;
+      line-height: 3.4375rem;
+      font-weight: normal;
+      color: #674f38; } }
+  @media only screen and (max-width: 440px) {
+    .script {
+      font-family: "Kristi", Courier, "Courier New", Monaco, monospace;
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 32px;
+      line-height: 2rem;
+      font-weight: normal;
+      color: #674f38; } }
+
 .title {
   text-align: center;
   padding-top: 48px;
@@ -492,6 +561,27 @@ small {
     .white a:hover {
       color: #b08f6e; }
   .white .circle_number {
+    background: rgba(176, 143, 110, 0.8);
+    color: white; }
+
+.cream {
+  background: #efe8e2;
+  background-image: url(../img/bg_white_01.jpg);
+  background-position: 10% 6%;
+  background-repeat: no-repeat;
+  background-size: 1024px;
+  color: #2a2728; }
+  .cream p {
+    color: #797174; }
+  .cream a {
+    color: #2a2728;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .cream a:hover {
+      color: #b08f6e; }
+  .cream .circle_number {
     background: rgba(176, 143, 110, 0.8);
     color: white; }
 
@@ -595,19 +685,19 @@ a {
   .roadshow a {
     color: #2a2728; }
 
-.white, .gold, .black, .red, .blue, .green, .roadshow {
+.white, .gold, .black, .red, .blue, .green, .cream, .roadshow {
   padding: 0 0 40px 0;
   border: 1rem solid; }
   @media only screen and (max-width: 1025px) {
-    .white, .gold, .black, .red, .blue, .green, .roadshow {
+    .white, .gold, .black, .red, .blue, .green, .cream, .roadshow {
       border: .7rem solid;
       background-size: 768px !important; } }
   @media only screen and (max-width: 769px) {
-    .white, .gold, .black, .red, .blue, .green, .roadshow {
+    .white, .gold, .black, .red, .blue, .green, .cream, .roadshow {
       border: .7rem solid;
       background-size: 320px !important; } }
   @media only screen and (max-width: 440px) {
-    .white, .gold, .black, .red, .blue, .green, .roadshow {
+    .white, .gold, .black, .red, .blue, .green, .cream, .roadshow {
       border: .5rem solid;
       background-image: none; } }
 
@@ -766,21 +856,21 @@ a.down {
 .rte-header nav, .rte-footer .footer-sections, .rte-footer .footer-additional .additional-section {
   max-width: 61.875rem; }
 
-.playerWrapper {
+.playerWrapper, .liveWrapper {
   margin-bottom: 1em;
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
   height: 0; }
-  .playerWrapper iframe {
+  .playerWrapper iframe, .liveWrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
 
-.playerWrapper {
+.playerWrapper, .liveWrapper {
   width: 100%;
   height: 100%;
   background: rgba(42, 39, 40, 0.9); }
